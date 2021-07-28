@@ -84,7 +84,7 @@ client.on("message", message => {
       .setThumbnail(client.user.avatarURL())
       .setColor("#ffff00")
       .setAuthor("Senro").setDescription(`
-**🌍 - Genaral Commands**
+** ___Genaral Commands___
 🌍┇bot - avatar
 🌍┇invite - support - server
 
