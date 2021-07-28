@@ -84,22 +84,20 @@ client.on("message", message => {
       .setThumbnail(client.user.avatarURL())
       .setColor("#ffff00")
       .setAuthor("Senro").setDescription(`
-** ___Genaral Commands___
-🌍┇bot - avatar
-🌍┇invite - support - server
+**<a:emoji_13:870076806160605234> ___Genaral Commands___
+<a:emoji_13:870076806160605234>┇bot - avatar
+<a:emoji_13:870076806160605234>┇invite - support - server
 
 
-**💰 - Economy Commands**
-💰┇daily(d) - cash(c)
-💰┇send - work(w)
-💰┇shop(h) - steal
+**<a:emoji_1:870056878464462879> ___Economy Commands___
+<a:emoji_1:870056878464462879>┇daily(d) - cash(c)
+<a:emoji_1:870056878464462879>┇send - work(w)
+<a:emoji_1:870056878464462879>┇shop(h) - steal
 
 **🎮 - Game Comamnds**
 🎮┇coinflip(cf) - slots(s)
 🎮┇Skull(sk) - fish(f)
 
-**‌🏅 - Rank Commands
-🏅┇rank(r) - top(t)
 
 **⚙️ - Moderation Commands**
 ⚙️┇lock - unlock
@@ -111,7 +109,7 @@ client.on("message", message => {
 💮┇girl - baby - coulpe
 💮┇smoking - sad - neon - emoji
 
-📎┇Link
+    ┇Link
 [Support Bot](https://discord.gg/ED2KEtqq9B) - [Invite Bot](https://discord.com/api/oauth2/authorize?client_id=840082346921295933&permissions=8&scope=bot) - [YouTube](coming soon) - [Website](coming soon)
 `);
     message.channel.send(embed);
