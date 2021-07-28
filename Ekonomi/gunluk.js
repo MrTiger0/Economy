@@ -24,13 +24,13 @@ let times = await db.fetch(`worktime_${message.author.id}`)
 ${time.hours ? time.hours + " hour": ""} ${time.minutes ? time.minutes + ' minute' : ''} ${time.seconds ? time.seconds+ '' : 're-enter the command!'}`))
   return
   }
-let moneys = rastgeleMiktar(5000, 10000);
+let moneys = rastgeleMiktar(5000, 7000);
       message.channel.send(new Discord.MessageEmbed()
                    .setColor("YELLOW")
                    .setFooter('💵Daily')
-                   .setThumbnail('https://media.discordapp.net/attachments/854471355554070548/866993452730548244/13-42-19-584026.png')
+                   .setThumbnail('<a:emoji_1:870056878464462879>')
                    .setAuthor(`Daily Crate Claimed`)
-                   .setDescription(`<:emoji_61:867523675304624148> __${moneys}__ was added to your balance`))
+                   .setDescription(`<a:emoji_1:870056878464462879> __${moneys}__ was added to your balance`))
 
 db.set(`worktime_${message.author.id}`, Date.now())
 

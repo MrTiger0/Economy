@@ -54,7 +54,7 @@ if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
             setTimeout(() => {
               msg.edit(`**
     ___SLOTS___  
-|${slots[result1]}${slots[result2]}${slots[result3]}${message.author.username}<:emoji_64:868542517493268500> ${kazandin}+
+|${slots[result1]}${slots[result2]}${slots[result3]}${message.author.username}<a:emoji_10:870059089055592508> ${kazandin}+
 |                  |
 |                  |**`,true);
             }, 3500);
@@ -72,7 +72,7 @@ if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
             setTimeout(() => {
               msg.edit(`**
     ___SLOTS___  
-|${slots[result1]}${slots[result2]}${slots[result3]}|${message.author.username}<:emoji_64:868542517493268500> ${miktar}-
+|${slots[result1]}${slots[result2]}${slots[result3]}|${message.author.username}<a:emoji_8:870059060714700870> ${miktar}-
 |                  |
 |                  |**`, true);
             }, 3500);
