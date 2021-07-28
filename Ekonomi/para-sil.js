@@ -42,6 +42,6 @@ exports.conf = {
 };
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
 exports.help = {
-  name: 'dark-delet',
+  name: 'ipman-delet',
 };
  
