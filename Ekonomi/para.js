@@ -11,9 +11,9 @@ exports.run = async (client, message, args) => {
 message.channel.send(new Discord.MessageEmbed()
                   .setColor("YELLOW")
                   .setFooter('💰Balance Info!')
-                  .setThumbnail('https://media.discordapp.net/attachments/846130327989649448/868423915012251658/1627042426917.png')
+                  .setThumbnail('https://media.discordapp.net/attachments/859402172373925918/870071907813326848/image0.gif')
                   .setAuthor(user.tag, user.avatarURL({dynamic: true}))     
-                  .addField(`Skull Cash 💰`,`__${toplam ? toplam +'':`0`}__`,true))
+                  .addField(`Senro Cash💰`,`__${toplam ? toplam +'':`0`}__`,true))
                     
   }
 

@@ -42,10 +42,10 @@ if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
      if (awnser === "LOOSELOOSE") {
  var kaybettin = miktar*2        
   //////        
-        var text2 = `**<@${message.author.id}> Skull <a:emoji_1:868498735305486356> Choice Own Or Lost**`;
+        var text2 = `**<@${message.author.id}> Senro <a:emoji_8:870059060714700870> Choice Own Or Lost**`;
           message.channel.send(text2).then(msg => {
             setTimeout(() => {
-              msg.edit(`**<@${message.author.id}> Skull Lost🔴 ${-kaybettin}**`);
+              msg.edit(`**<@${message.author.id}> Senro Lost🔴 ${-kaybettin}**`);
             }, 3000);
           });
       await db.set(`bahisoynama_${message.author.id}`, Date.now());   
@@ -53,10 +53,10 @@ if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
         } else {
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
           var kazandın = miktar*2
-        var text2 = `**<@${message.author.id}> Skull <a:emoji_1:868498735305486356> Choice Own Or Lost**`;
+        var text2 = `**<@${message.author.id}> Senro <a:emoji_10:870059089055592508> Choice Own Or Lost**`;
           message.channel.send(text2).then(msg => {
             setTimeout(() => {
-              msg.edit(`**<@${message.author.id}> Skull Win🟢 ${kazandın}**`);
+              msg.edit(`**<@${message.author.id}> Senro Win🟢 ${kazandın}**`);
             }, 3000);
           });   
     await db.set(`bahisoynama_${message.author.id}`, Date.now());   
