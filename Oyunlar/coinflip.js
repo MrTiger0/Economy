@@ -36,7 +36,7 @@ if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
                                         .setDescription(`In your wallet to place a bet ${para ? "just " + para + ' 💸 there is!' : 'you have no money!'}`))
         const result = [
           "LOOSELOOSE",
-          "LOOSELOOSE",
+          "WINWIN",
           "WINWIN",
           "LOOSELOOSE",
           "LOOSELOOSE"
@@ -46,11 +46,11 @@ if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
      if (awnser === "LOOSELOOSE") {
  var kaybettin = miktar*2        
         //////        
-        var text2 = `**<@${message.author.id}> CoinFlip <a:emoji_1:868498735305486356> Choice Own Or Lost**`;
+        var text2 = `**<@${message.author.id}> CoinFlip <a:emoji_3:870056915542081557> Choice Own Or Lost**`;
           message.channel.send(text2).then(msg => {
             setTimeout(() => {
-              msg.edit(`**<@${message.author.id}>spent cowoncy ${-kaybettin}<:emoji_64:868542517493268500> and chose heads
-The coin spins...<a:emoji_63:868502645126598697> tail and you lost it all... :c**`);
+              msg.edit(`**<@${message.author.id}>spent cowoncy ${-kaybettin}<a:emoji_8:870059060714700870> and chose heads
+The coin spins...<a:emoji_8:870059060714700870> tail and you lost it all... :c**`);
             }, 3000);
           });
       await db.set(`bahisoynama_${message.author.id}`, Date.now());   
@@ -58,11 +58,11 @@ The coin spins...<a:emoji_63:868502645126598697> tail and you lost it all... :c*
       } else { 
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
           var kazandın = miktar*2
-        var text2 = `**<@${message.author.id}> CoinFlip <a:emoji_1:868498735305486356> Choice Own Or Lost**`;
+        var text2 = `**<@${message.author.id}> CoinFlip <a:emoji_3:870056915542081557> Choice Own Or Lost**`;
           message.channel.send(text2).then(msg => {
             setTimeout(() => {
-              msg.edit(`**<@${message.author.id}> spent cowoncy ${kazandın}<:emoji_64:868542517493268500> and chose heads
-The coin spins...<a:emoji_63:868502645126598697> coinflip**`);
+              msg.edit(`**<@${message.author.id}> spent cowoncy ${kazandın}<a:emoji_10:870059089055592508> and chose heads
+The coin spins...<a:emoji_10:870059089055592508> coinflip**`);
             }, 3000);
           });
     await db.set(`bahisoynama_${message.author.id}`, Date.now());   
