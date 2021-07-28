@@ -8,12 +8,12 @@ exports.run = function(client, message,  args) {
   if(!miktar) return message.channel.send(new Discord.MessageEmbed()
       .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
       .setColor("GREEN")
-      .setDescription(`**slots** You Can't More Than<a:emoji_10:870059089055592508> 50,000`))
+      .setDescription(`**slots** You Can't More Than <a:emoji_10:870059089055592508> 50,000`))
   //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
 if(miktar > 50000) return message.channel.send(new Discord.MessageEmbed()
       .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
       .setColor("GREEN")
-      .setDescription(`**slots**You Can't More Than<a:emoji_8:870059060714700870> 50,000`))
+      .setDescription(`**slots**You Can't More Than <a:emoji_8:870059060714700870> 50,000`))
   /////////////
 if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
   .setColor("#ffff00")
@@ -25,7 +25,7 @@ if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
 .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
 .setDescription(`🤔 The amount you entered is not a valid number !?`))
  let kazandin = miktar*3   
-  let slots = ["<:emoji_4:870056959229956096>","<:emoji_5:870056991849054259>","<:emoji_4:870056959229956096>","<:emoji_6:870057018818453525>"];
+  let slots = ["<:emoji_6:870057018818453525>","<:emoji_5:870056991849054259>","<:emoji_4:870056959229956096>","<:emoji_6:870057018818453525>"];
   //
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
   let result1 = Math.floor((Math.random() * slots.length));
@@ -47,7 +47,7 @@ if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
   if (slots[result1] === slots[result2] && slots[result2] === slots[result3] ) {
     var text2 = `**
     ___SLOTS___  
-|<;emoji_5:870056991849054259><:emoji_5:870056991849054259><:emoji_6:870057018818453525>|${message.author.username}
+|<a:emoji_2:870056896747438121><a:emoji_2:870056896747438121><a:emoji_2:870056896747438121>|${message.author.username}
 |                  |
 |                  |**`;
           message.channel.send(text2).then(msg => {
@@ -65,7 +65,7 @@ if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
   } else {
     var text3 = `**
     ___SLOTS___  
-|<a:emoji_63:868550466781470781><a:emoji_63:868550466781470781><a:emoji_63:868550466781470781>|${message.author.username}
+|<a:emoji_2:870056896747438121><a:emoji_2:870056896747438121><a:emoji_2:870056896747438121>|${message.author.username}
 |                  |
 |                  |**`;
           message.channel.send(text3).then(msg => {
