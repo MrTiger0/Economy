@@ -83,7 +83,7 @@ client.on("message", message => {
     const embed = new Discord.MessageEmbed()
       .setThumbnail(client.user.avatarURL())
       .setColor("#ffff00")
-      .setAuthor("Senro").setDescription(`
+      .setAuthor("The Prefix { S }").setDescription(`
 **<a:emoji_13:870076806160605234> ___Genaral Commands___
 <a:emoji_13:870076806160605234>┇bot - avatar
 <a:emoji_13:870076806160605234>┇invite - support - server
@@ -94,22 +94,25 @@ client.on("message", message => {
 <a:emoji_1:870056878464462879>┇send - work(w)
 <a:emoji_1:870056878464462879>┇shop(h) - steal
 
+
 **<a:emoji_14:870077202157408337> ___Game Comamnds___
 <a:emoji_14:870077202157408337>┇coinflip(cf) - slots(s)
 <a:emoji_14:870077202157408337>┇Skull(sk) - fish(f)
 
 
-**___Moderation Commands___
-⚙️┇lock - unlock
-⚙️┇server - kick
-⚙️┇clear - role
+<a:emoji_18:870082968511742033> ___Moderation Commands___
+<a:emoji_18:870082968511742033>┇lock - unlock
+<a:emoji_18:870082968511742033>┇server - kick
+<a:emoji_18:870082968511742033>┇clear - role
 
-**💮 - Gif Commands**
-💮┇anime - animel - boy
-💮┇girl - baby - coulpe
-💮┇smoking - sad - neon - emoji
 
-    ┇Link
+**<a:emoji_9:870059074333577276> ___Gif Commands___
+<a:emoji_9:870059074333577276>┇anime - animel - boy
+<a:emoji_9:870059074333577276>┇girl - baby - coulpe
+<a:emoji_9:870059074333577276>┇smoking - sad - neon - emoji
+
+
+<a:emoji_16:870080499220095026>┇Link
 [Support Bot](https://discord.gg/ED2KEtqq9B) - [Invite Bot](https://discord.com/api/oauth2/authorize?client_id=840082346921295933&permissions=8&scope=bot) - [YouTube](coming soon) - [Website](coming soon)
 `);
     message.channel.send(embed);
