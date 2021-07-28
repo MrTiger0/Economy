@@ -83,7 +83,7 @@ client.on("message", message => {
     const embed = new Discord.MessageEmbed()
       .setThumbnail(client.user.avatarURL())
       .setColor("#ffff00")
-      .setAuthor("Skull").setDescription(`
+      .setAuthor("Senro").setDescription(`
 **🌍 - Genaral Commands**
 🌍┇bot - avatar
 🌍┇invite - support - server
