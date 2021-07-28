@@ -94,12 +94,12 @@ client.on("message", message => {
 <a:emoji_1:870056878464462879>┇send - work(w)
 <a:emoji_1:870056878464462879>┇shop(h) - steal
 
-**🎮 - Game Comamnds**
-🎮┇coinflip(cf) - slots(s)
-🎮┇Skull(sk) - fish(f)
+**<a:emoji_14:870077202157408337> ___Game Comamnds___
+<a:emoji_14:870077202157408337>┇coinflip(cf) - slots(s)
+<a:emoji_14:870077202157408337>┇Skull(sk) - fish(f)
 
 
-**⚙️ - Moderation Commands**
+**___Moderation Commands___
 ⚙️┇lock - unlock
 ⚙️┇server - kick
 ⚙️┇clear - role
