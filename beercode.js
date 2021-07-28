@@ -112,7 +112,7 @@ client.on("message", message => {
 💮┇smoking - sad - neon - emoji
 
 📎┇Link
-[Support Bot](https://discord.gg/SyxSfp5dMQ) - [Invite Bot](https://discord.com/api/oauth2/authorize?client_id=863360142086635550&permissions=8&scope=bot) - [YouTube](https://www.youtube.com/watch?v=EIf67Y3KFPc) - [Website](https://bit.ly/SkullBots)
+[Support Bot](https://discord.gg/ED2KEtqq9B) - [Invite Bot](https://discord.com/api/oauth2/authorize?client_id=840082346921295933&permissions=8&scope=bot) - [YouTube](coming soon) - [Website](coming soon)
 `);
     message.channel.send(embed);
   }
@@ -226,9 +226,8 @@ ${client.channels.cache.size}
 > **User**
 ${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}
 > **Owner Bot** :
-<@
-> **Owner Bot**
-<@>
+<@844127557388992512>
+
 > **Prefix Bot** :
 S`);
     message.channel.send(embed);
