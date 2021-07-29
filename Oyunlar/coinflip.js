@@ -62,7 +62,7 @@ The coin spins...<a:emoji_8:870059060714700870> tail and you lost it all... :c**
           message.channel.send(text2).then(msg => {
             setTimeout(() => {
               msg.edit(`**<@${message.author.id}> spent cowoncy ${kazandın}<a:emoji_10:870059089055592508> and chose heads
-The coin spins...<a:emoji_10:870059089055592508> coinflip**`);
+The coin spins...<a:emoji_10:870059089055592508> coinflip 50000**`);
             }, 3000);
           });
     await db.set(`bahisoynama_${message.author.id}`, Date.now());   

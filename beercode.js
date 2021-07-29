@@ -279,13 +279,13 @@ client.on("message", async message => {
         `https://media.discordapp.net/attachments/855773790184931339/868417068951801886/1615058769329.jpg`
       )
       .setAuthor(client.user.username, client.user.avatarURL()).setDescription(`
-<a:emoji_48:850045260028575784> | Skull Prefix (S)
+<a:emoji_48:850045260028575784> | Senro Prefix (S)
       
-<a:emoji_48:850045260028575784> | Skull [Support](https://discord.gg/SyxSfp5dMQ)
+<a:emoji_48:850045260028575784> | Senro [Support](https://discord.gg/ED2KEtqq9B)
 
-<a:emoji_48:850045260028575784> | Skull [Invite](https://discord.com/api/oauth2/authorize?client_id=863360142086635550&permissions=27664&scope=bot)
+<a:emoji_48:850045260028575784> | Senro [Invite](https://discord.com/api/oauth2/authorize?client_id=840082346921295933&permissions=8&scope=bot)
 
-<a:emoji_48:850045260028575784> | Skull [Website](https://bit.ly/SkullBots)`);
+<a:emoji_48:850045260028575784> | Senro [Website](coming soon)`);
 
     message.channel.send(help);
   }
