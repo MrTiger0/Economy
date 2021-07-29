@@ -12,7 +12,7 @@ module.exports.run = async (client, message, args) => {
  if(!user) return message.channel.send(new Discord.MessageEmbed()
                       .setColor("RED")
                       .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))                   
-                      .setDescription(`⛔ You have to tag the user whose money you want to steal!`))
+                      .setDescription(`<a:emoji_29:870154809582440488> You have to tag the user whose money you want to steal!`))
   let targetuser = await db.fetch(`para_${user.id}`);
   let author     = await db.fetch(`çalma_${message.author.id}`);
   let author2    = await db.fetch(`para_${message.author.id}`);
@@ -32,7 +32,7 @@ if (author !== null && timeout - (Date.now() - author) > 0) {
     let moneyEmbed = new Discord.MessageEmbed()
   .setColor("RED")
   .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))  
-  .setDescription(`⛔  To steal money you need at least 200 💸 coins`);
+  .setDescription(`<a:emoji_29:870154809582440488> To steal money you need at least 200 💸 coins`);
 
 
   if (author2 < 200) {
@@ -42,7 +42,7 @@ var lostmoney = rastgeleMiktar(150,500)
   let moneyEmbed2 = new Discord.MessageEmbed()
   .setColor("RED")
   .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))  
-  .setDescription(`⛔ Faqir you tried to rob someone and ${lostmoney} 💸 you were fined`);
+  .setDescription(`<a:emoji_29:870154809582440488> Faqir you tried to rob someone and ${lostmoney} 💸 you were fined`);
   
 
   //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\ 
@@ -55,7 +55,7 @@ db.add(`para_${message.author.id}`, -lostmoney)
   let authorembed = new Discord.MessageEmbed()
   .setColor("RED")
   .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))  
-  .setDescription(`⛔ You think me to undress yourself?!`);
+  .setDescription(`<a:emoji_29:870154809582440488> You think me to undress yourself?!`);
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
     if(user.id === message.author.id) {
     return message.channel.send(authorembed)
@@ -65,7 +65,7 @@ db.add(`para_${message.author.id}`, -lostmoney)
 
   let embed = new Discord.MessageEmbed()
    .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))  
-   .setDescription(` Robbery Successful, ${user}'you robbed and ${gotmoney} <a:emoji_25:870145821469966406> you won`)
+   .setDescription(`<a:emoji_31:870155756572381205> Robbery Successful, ${user}'you robbed and ${gotmoney} <a:emoji_25:870145821469966406> you won`)
    .setColor("GREEN")
 
    message.channel.send(embed)
