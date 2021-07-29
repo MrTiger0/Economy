@@ -56,7 +56,7 @@ if(miktar === 'all' || miktar === 'all') {
                 .setColor('GREEN')
                 .setThumbnail('https://media.discordapp.net/attachments/855773790184931339/867524692382318632/money-cash.gif')
                 .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))  
-.setDescription(`**__✅Payment Transferred!__**
+.setDescription(`**__<a:emoji_31:870155756572381205> Payment Transferred!__**
 
 You Paid ${etiket}
 Add Balance<a:emoji_1:870056878464462879> __${miktar}+__
