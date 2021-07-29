@@ -17,14 +17,14 @@ exports.run = async (client, message, args) => {
         let time = ms(timeout - (Date.now() - crime));
     
         message.channel.send(new Discord.MessageEmbed()
-                      .setColor("#ffff00")
+                      .setColor("dfe600")
                         .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
                         .setDescription(`<a:emoji_22:870143282594865213> For fishing ${time.seconds ? time.seconds + ' you have to wait seconds!' : 'try again!'}`))
       } else {
      let gerekenpara = 250
      let para = db.fetch(`para_${message.author.id}`)
      if(para < 250) return message.channel.send(new Discord.MessageEmbed()
-                      .setColor("RED")
+                      .setColor("dfe600")
                       .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
                                                 .setDescription(`You have to rent a fishing line from your uncle for fishing! Money Required: 250 <a:emoji_1:870056878464462879>`))
@@ -37,7 +37,7 @@ exports.run = async (client, message, args) => {
          var kazandın = rastgeleMiktar(300,1000)
     let embed = new Discord.MessageEmbed()
       .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
-      .setColor("#ffff00")
+      .setColor("dfe600")
       .setDescription(`They're Sold |<a:emoji_1:870056878464462879>|<a:emoji_3:870056915542081557>|<:emoji_24:870144185917902889>|:heart:|- __${kazandın}__ Sold!💸`)
       message.channel.send(embed)   
      await db.set(`baliktutma_${message.author.id}`, Date.now());

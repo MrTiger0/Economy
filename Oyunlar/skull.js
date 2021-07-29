@@ -16,22 +16,22 @@ exports.run = async (client, message, args) => {
         message.channel.send(new Discord.MessageEmbed()
                       .setColor("#ffff00")
                         .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
-                        .setDescription(`⏱ To place a Coin Flip ${time.seconds ? time.seconds + ' you have to wait seconds!' : 'try again!'}`))
+                        .setDescription(`<a:emoji_22:870143282594865213> To place a Coin Flip ${time.seconds ? time.seconds + ' you have to wait seconds!' : 'try again!'}`))
       } else {
   var miktar = args[0]
   if(!miktar) return message.channel.send(new Discord.MessageEmbed()
                                         .setColor("#ffff00")
                                         .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
-                                        .setDescription(`You Can't More Than<:emoji_61:867523675304624148> 50,000`))
+                                        .setDescription(`You Can't More Than<a:emoji_25:870145821469966406> 50,000`))
  if(miktar > 50000) return message.channel.send(new Discord.MessageEmbed()
                                         .setColor("#ffff00")
                                         .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
-                                        .setDescription(`You can bet up to 50000 💸!`))   
+                                        .setDescription(`You can bet up to 50000 <a:emoji_25:870145821469966406>!`))   
 if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
                                               .setColor("#ffff00")
                                         .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
-                                        .setDescription(`In your wallet to place a bet ${para ? "just " + para + ' 💸 there is!' : 'you have no money!'}`))
+                                        .setDescription(`In your wallet to place a bet ${para ? "just " + para + ' <a:emoji_25:870145821469966406> there is!' : 'you have no money!'}`))
         const result = [
           "LOOSELOOSE",
           "WINWIN",
