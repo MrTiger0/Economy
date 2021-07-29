@@ -16,7 +16,7 @@ exports.run = async (client, message, args) => {
         message.channel.send(new Discord.MessageEmbed()
                       .setColor("#ffff00")
                         .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
-                        .setDescription(`⏱ You Have A Cooldown For __coinflip__
+                        .setDescription(`<a:emoji_22:870143282594865213> You Have A Cooldown For __coinflip__
                         **Time left**
                         ${time.seconds ? time.seconds + 'seconds' : 'try again!'}`))
       } else {

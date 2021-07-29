@@ -19,7 +19,7 @@ exports.run = async (client, message, args) => {
         message.channel.send(new Discord.MessageEmbed()
                       .setColor("#ffff00")
                         .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
-                        .setDescription(`⏱ For fishing ${time.seconds ? time.seconds + ' you have to wait seconds!' : 'try again!'}`))
+                        .setDescription(`<a:emoji_22:870143282594865213> For fishing ${time.seconds ? time.seconds + ' you have to wait seconds!' : 'try again!'}`))
       } else {
      let gerekenpara = 250
      let para = db.fetch(`para_${message.author.id}`)
