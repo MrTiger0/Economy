@@ -112,6 +112,11 @@ client.on("message", message => {
 <a:emoji_9:870059074333577276>┇smoking - sad - neon - emoji
 
 
+<a:emoji_19:870116007937716255> ___Photo Commands___
+<a:emoji_19:870116007937716255>┇pgirl - pboy - pemoji
+<a:emoji_19:870116007937716255>┇panime - pcoulpe
+
+
 <a:emoji_16:870080499220095026>┇Link
 [Support Bot](https://discord.gg/ED2KEtqq9B) - [Invite Bot](https://discord.com/api/oauth2/authorize?client_id=840082346921295933&permissions=8&scope=bot) - [YouTube](coming soon) - [Website](coming soon)
 `);
