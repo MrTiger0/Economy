@@ -37,8 +37,8 @@ if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
         const result = [
           "LOOSELOOSE",
           "WINWIN",
+          "LOSSELOSSE",
           "WINWIN",
-          "LOSSELOOSE",
           "LOOSELOOSE"
         ] 
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
