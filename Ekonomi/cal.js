@@ -24,7 +24,7 @@ if (author !== null && timeout - (Date.now() - author) > 0) {
     let timeEmbed = new Discord.MessageEmbed()
     .setColor("RED")
     .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
-     .setFiled(`⏱ To rob someone ${time.minutes ? time.minutes + ' minute,' : ''} ${time.seconds ? time.seconds + ' you have to wait seconds!' : 'try again!'}`);
+     .setFiled(`<a:emoji_22:870143282594865213> To rob someone ${time.minutes ? time.minutes + ' minute,' : ''} ${time.seconds ? time.seconds + ' you have to wait seconds!' : 'try again!'}`);
     message.channel.send(timeEmbed)
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
   } else {
@@ -65,7 +65,7 @@ db.add(`para_${message.author.id}`, -lostmoney)
 
   let embed = new Discord.MessageEmbed()
    .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))  
-   .setDescription(`✅ Robbery Successful, ${user}'you robbed and ${gotmoney} 💸 you won`)
+   .setDescription(` Robbery Successful, ${user}'you robbed and ${gotmoney} <a:emoji_25:870145821469966406> you won`)
    .setColor("GREEN")
 
    message.channel.send(embed)
