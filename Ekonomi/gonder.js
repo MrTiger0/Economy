@@ -21,7 +21,7 @@ module.exports.run = async (client, message, args) => {
   if(miktar < 0 ||  miktar.startsWith('0') ) return message.channel.send(new Discord.MessageEmbed()
 .setColor("RED")//== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
 .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
-.setDescription(` The amount you entered is not a valid number !?`));
+.setDescription(`<a:emoji_32:870319275263533107> The amount you entered is not a valid number !?`));
  if(miktar === 'all' || miktar === 'all') {
    if(para < 0) return message.channel.send(new Discord.MessageEmbed()
 .setColor("RED")
@@ -38,7 +38,7 @@ message.channel.send(new Discord.MessageEmbed()
   if(isNaN(miktar)) return message.channel.send(new Discord.MessageEmbed()
 .setColor("RED")
 .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
-.setDescription(`🤔The amount you entered is not a valid number !?`))
+.setDescription(`<a:emoji_32:870319275263533107> The amount you entered is not a valid number !?`))
  } //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
   if(etiket.id === message.author.id) return message.channel.send(new Discord.MessageEmbed()
                       .setColor("RED")
