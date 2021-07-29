@@ -10,10 +10,10 @@ exports.run = async (client, message, args) => {
   var toplam= cüzdan+banka
 message.channel.send(new Discord.MessageEmbed()
                   .setColor("YELLOW")
-                  .setFooter('💰Balance Info!')
+                  .setFooter('Senro Balance Info!')
                   .setThumbnail('https://media.discordapp.net/attachments/859402172373925918/870071907813326848/image0.gif')
                   .setAuthor(user.tag, user.avatarURL({dynamic: true}))     
-                  .addField(`Senro Cash💰`,`__${toplam ? toplam +'':`0`}__`,true))
+                  .addField(`Senro Cash <a:emoji_25:870145821469966406>`,`__${toplam ? toplam +'':`0`}__`,true))
                     
   }
 

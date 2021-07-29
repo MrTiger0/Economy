@@ -233,7 +233,8 @@ ${client.channels.cache.size}
 ${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}
 > **Owner Bot** :
 <@844127557388992512>
-
+> **Admin Bot** :
+<@752164907650383993>
 > **Prefix Bot** :
 S`);
     message.channel.send(embed);
