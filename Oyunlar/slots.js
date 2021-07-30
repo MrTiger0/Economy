@@ -18,7 +18,7 @@ if(miktar > 50000) return message.channel.send(new Discord.MessageEmbed()
 if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
   .setColor("#ffff00")
   .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
-  .setDescription(`In your wallet to place a bet ${para ? "just " + para + '  there is!' : 'you have no money!'}`))
+  .setDescription(`In your wallet to place a bet ${para ? "just " + para + ' <a:emoji_1:870056878464462879> there is!' : 'you have no money!'}`))
   /////////////////
   if(isNaN(miktar) || miktar < 0) return message.channel.send(new Discord.MessageEmbed()
 .setColor("RED")
