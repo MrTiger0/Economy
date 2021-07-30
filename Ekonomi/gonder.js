@@ -54,7 +54,7 @@ if(miktar === 'all' || miktar === 'all') {
 }  else { //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
   message.channel.send(new Discord.MessageEmbed()
                 .setColor('GREEN')
-                .setThumbnail('https://media.discordapp.net/attachments/855773790184931339/867524692382318632/money-cash.gif')
+                .setThumbnail('https://media.discordapp.net/attachments/852987040659931248/870484993980391424/image0.gif')
                 .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))  
 .setDescription(`**__<a:emoji_31:870155756572381205> Payment Transferred!__**
 
@@ -69,7 +69,7 @@ Send By ${message.author.username}`))
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ["give"," send"],
+  aliases: ["sn"," send"],
   permLevel: 0
 };
 
