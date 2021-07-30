@@ -18,12 +18,12 @@ if(miktar > 50000) return message.channel.send(new Discord.MessageEmbed()
 if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
   .setColor("#ffff00")
   .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
-  .setDescription(`In your wallet to place a bet ${para ? "just " + para + ' 💸 there is!' : 'you have no money!'}`))
+  .setDescription(`In your wallet to place a bet ${para ? "just " + para + '  there is!' : 'you have no money!'}`))
   /////////////////
   if(isNaN(miktar) || miktar < 0) return message.channel.send(new Discord.MessageEmbed()
 .setColor("RED")
 .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
-.setDescription(`🤔 The amount you entered is not a valid number !?`))
+.setDescription(`<a:emoji_32:870319275263533107> The amount you entered is not a valid number !?`))
  let kazandin = miktar*3   
   let slots = ["<:emoji_6:870057018818453525>","<:emoji_5:870056991849054259>","<:emoji_4:870056959229956096>","<:emoji_6:870057018818453525>"];
   //
