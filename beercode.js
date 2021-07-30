@@ -82,39 +82,39 @@ client.on("message", message => {
   if (message.content === "Shelp") {
     const embed = new Discord.MessageEmbed()
       .setThumbnail(client.user.avatarURL())
-      .setColor("#ffff00")
+      .setColor("c6df00")
       .setAuthor("The Prefix { S }").setDescription(`
-**<a:emoji_13:870076806160605234> ___Genaral Commands___
-<a:emoji_13:870076806160605234>┇bot - avatar
-<a:emoji_13:870076806160605234>┇invite - support - server
+**<a:emoji_13:870076806160605234>┇___Genaral Commands___
+bot - avatar
+invite - support - server
 
 
-**<a:emoji_1:870056878464462879> ___Economy Commands___
-<a:emoji_1:870056878464462879>┇daily(d) - cash(c)
-<a:emoji_1:870056878464462879>┇send - work(w)
-<a:emoji_1:870056878464462879>┇shop(h) - steal
+**<a:emoji_1:870056878464462879>┇___Economy Commands___
+daily(d) - cash(c)
+send - work(w)
+shop(h) - steal
 
 
-**<a:emoji_14:870077202157408337> ___Game Comamnds___
-<a:emoji_14:870077202157408337>┇coinflip(cf) - slots(s)
-<a:emoji_14:870077202157408337>┇Skull(sk) - fish(f)
+**<a:emoji_14:870077202157408337>┇___Game Comamnds___
+coinflip(cf) - slots(s)
+Skull(sk) - fish(f)
 
 
-<a:emoji_18:870082968511742033> ___Moderation Commands___
-<a:emoji_18:870082968511742033>┇lock - unlock
-<a:emoji_18:870082968511742033>┇server - kick
-<a:emoji_18:870082968511742033>┇clear - role
+<a:emoji_18:870082968511742033>┇___Moderation Commands___
+lock - unlock
+server - kick
+clear - role
 
 
-**<a:emoji_9:870059074333577276> ___Gif Commands___
-<a:emoji_9:870059074333577276>┇anime - animel - boy
-<a:emoji_9:870059074333577276>┇girl - baby - coulpe
-<a:emoji_9:870059074333577276>┇smoking - sad - neon - emoji
+**<a:emoji_9:870059074333577276>┇___Gif Commands___
+anime - animel - boy
+girl - baby - coulpe
+smoking - sad - neon - emoji
 
 
-<a:emoji_19:870116007937716255> ___Photo Commands___
-<a:emoji_19:870116007937716255>┇pgirl - pboy - pemoji
-<a:emoji_19:870116007937716255>┇panime - pcoulpe
+<a:emoji_19:870116007937716255>┇___Photo Commands___
+pgirl - pboy - pemoji
+panime - pcoulpe
 
 
 <a:emoji_16:870080499220095026>┇Link

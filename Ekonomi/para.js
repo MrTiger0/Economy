@@ -11,7 +11,7 @@ exports.run = async (client, message, args) => {
 message.channel.send(new Discord.MessageEmbed()
                   .setColor("YELLOW")
                   .setFooter('Senro Balance Info!')
-                  .setThumbnail('https://media.discordapp.net/attachments/859402172373925918/870071907813326848/image0.gif')
+                  .setThumbnail('https://media.discordapp.net/attachments/852987040659931248/870487115048312882/image0.gif')
                   .setAuthor(user.tag, user.avatarURL({dynamic: true}))     
                   .addField(`Senro Cash <a:emoji_25:870145821469966406>`,`__${toplam ? toplam +'':`0`}__`,true))
                     
