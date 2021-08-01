@@ -85,14 +85,14 @@ client.on("message", message => {
       .setColor("c6df00")
       .setAuthor("The Prefix { S }").setDescription(`
 **<a:emoji_13:870076806160605234>┇___Genaral Commands___
-bot - avatar
-invite - support - server
+bot - avatar - server
+invite - support 
 
 
 **<a:emoji_1:870056878464462879>┇___Economy Commands___
-daily(d) - cash(c)
-send - work(w)
-shop(h) - steal
+daily(d) - cash(c) - work(w)
+send - steal - shop(h)
+
 
 
 **<a:emoji_14:870077202157408337>┇___Game Comamnds___
@@ -101,9 +101,9 @@ Skull(sk) - fish(f)
 
 
 <a:emoji_18:870082968511742033>┇___Moderation Commands___
-lock - unlock
-server - kick
-clear - role
+lock - unlock - kick
+server - role - clear
+
 
 
 **<a:emoji_9:870059074333577276>┇___Gif Commands___
