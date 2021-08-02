@@ -50,7 +50,7 @@ if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
           message.channel.send(text2).then(msg => {
             setTimeout(() => {
               msg.edit(`**<@${message.author.id}>spent cowoncy ${-kaybettin}<a:emoji_8:870059060714700870> and chose heads
-The coin spins...<a:emoji_8:870059060714700870> tail and you lost it all...loose 50000-**`);
+The coin spins...<a:emoji_8:870059060714700870> tail and you lost it all...loose (loose)**`);
             }, 3000);
           });
       await db.set(`bahisoynama_${message.author.id}`, Date.now());   
@@ -62,7 +62,7 @@ The coin spins...<a:emoji_8:870059060714700870> tail and you lost it all...loose
           message.channel.send(text2).then(msg => {
             setTimeout(() => {
               msg.edit(`**<@${message.author.id}> spent cowoncy ${kazandın}<a:emoji_10:870059089055592508> and chose heads
-The coin spins...<a:emoji_10:870059089055592508> coinflip win 50000+**`);
+The coin spins...<a:emoji_10:870059089055592508> coinflip win (win)**`);
             }, 3000);
           });
     await db.set(`bahisoynama_${message.author.id}`, Date.now());   
