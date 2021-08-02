@@ -282,16 +282,18 @@ client.on("message", async message => {
     let help = new Discord.MessageEmbed()
       .setColor("#ffff00")
       .setThumbnail(
-        `https://media.discordapp.net/attachments/855773790184931339/868417068951801886/1615058769329.jpg`
+        `https://media.discordapp.net/attachments/852929336688640021/871681917504868382/image0.gif`
       )
-      .setAuthor(client.user.username, client.user.avatarURL()).setDescription(`
+   .setAuthor(client.user.username, client.user.avatarURL()).setDescription(`
+   
 <a:emoji_17:870082062596587520> | Senro Prefix (S)
+
       
- | Senro [Support](https://discord.gg/ED2KEtqq9B)
+<a:emoji_33:871679970882244618> | Senro [Support](https://discord.gg/ED2KEtqq9B)
 
-<a:emoji_48:850045260028575784> | Senro [Invite](https://discord.com/api/oauth2/authorize?client_id=840082346921295933&permissions=8&scope=bot)
+<a:emoji_34:871680980916789259> | Senro [Invite](https://discord.com/api/oauth2/authorize?client_id=840082346921295933&permissions=8&scope=bot)
 
-<a:emoji_48:850045260028575784> | Senro [Website](coming soon)`);
+<a:emoji_18:870082968511742033> | Senro [Website](coming soon)`);
 
     message.channel.send(help);
   }
