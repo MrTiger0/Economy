@@ -86,7 +86,9 @@ client.on("message", message => {
       .setAuthor("The Prefix { S }").setDescription(`
 **<a:emoji_13:870076806160605234>┇___Genaral Commands___
 bot - avatar - server
-invite - support 
+invite - support - kick
+unlock - lock - role 
+clear - server 
 
 
 **<a:emoji_1:870056878464462879>┇___Economy Commands___
@@ -94,16 +96,9 @@ daily(d) - cash(c) - work(w)
 send - steal - shop(h)
 
 
-
 **<a:emoji_14:870077202157408337>┇___Game Comamnds___
 coinflip(cf) - slots(s)
 Skull(sk) - fish(f)
-
-
-<a:emoji_18:870082968511742033>┇___Moderation Commands___
-lock - unlock - kick
-server - role - clear
-
 
 
 **<a:emoji_9:870059074333577276>┇___Gif Commands___
