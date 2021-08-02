@@ -225,17 +225,15 @@ client.on("message", message => {
   if (message.content === "Sbot") {
     const embed = new Discord.MessageEmbed().setColor("#ffff00")
       .setDescription(`
- > **Server**
+> <a:emoji_18:870082968511742033> | Server
 ${client.guilds.cache.size}
-> **Channel**
+> <a:emoji_34:871680980916789259> | Channel
 ${client.channels.cache.size}
-> **User**
+> <a:emoji_13:870076806160605234> | User
 ${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}
-> **Owner Bot** :
+> <a:emoji_36:871683968137822229> | Owner Bot 
 <@844127557388992512>
-> **Admin Bot** :
-<@752164907650383993>
-> **Prefix Bot** :
+> <a:emoji_17:870082062596587520> | Prefix Bot
 S`);
     message.channel.send(embed);
   }
