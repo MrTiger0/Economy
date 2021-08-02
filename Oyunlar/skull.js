@@ -45,7 +45,7 @@ if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
         var text2 = `**<@${message.author.id}> Senro <a:emoji_3:870056915542081557> Choice Win Or Lost**`;
           message.channel.send(text2).then(msg => {
             setTimeout(() => {
-              msg.edit(`**<@${message.author.id}> Senro Lost <a:emoji_12:870075106406309968> ${-kaybettin} (loose)**`);
+              msg.edit(`**<@${message.author.id}> Senro Lost 50000-<a:emoji_12:870075106406309968> ${-kaybettin} (loose)**`);
             }, 3000);
           });
       await db.set(`bahisoynama_${message.author.id}`, Date.now());   
@@ -56,7 +56,7 @@ if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
         var text2 = `**<@${message.author.id}> Senro <a:emoji_3:870056915542081557> Choice Win Or Lost**`;
           message.channel.send(text2).then(msg => {
             setTimeout(() => {
-              msg.edit(`**<@${message.author.id}> Senro Win <a:emoji_11:870075090652512376> ${kazandın} (win)**`);
+              msg.edit(`**<@${message.author.id}> Senro Win 50000 <a:emoji_11:870075090652512376> ${kazandın} (win)**`);
             }, 3000);
           });   
     await db.set(`bahisoynama_${message.author.id}`, Date.now());   
