@@ -98,7 +98,7 @@ send - steal - shop(h)
 
 **<a:emoji_14:870077202157408337>┇___Game Comamnds___
 coinflip(cf) - slots(s)
-Skull(sk) - fish(f)
+senro(so) - fish(f)
 
 
 **<a:emoji_9:870059074333577276>┇___Gif Commands___
@@ -252,7 +252,10 @@ client.on("message", message => {
     });
   }
 });
-//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////client.on("message", message => { if (message.content === prefix + "lockall") {
+   
+
+/////////////////////////////////////////////////////////////
 client.on("message", message => {
   if (message.content === "Sunlock") {
     if (!message.member.hasPermission("MANAGE_CHANNELS")) return;
@@ -267,8 +270,6 @@ client.on("message", message => {
     message.channel.updateOverwrite(message.guild.id, {
       SEND_MESSAGES: true
     });
-  }
-});
 //===============================================================================\\
 client.on("message", async message => {
   if (message.content.startsWith(`<@${client.user.id}>`)) {

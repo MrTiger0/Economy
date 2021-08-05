@@ -65,9 +65,9 @@ if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
         }}}
 exports.conf = {
   enabled: true,
-  aliases: ["skull"],
+  aliases: ["senro"],
 };
 
 exports.help = {
-  name: 'sk',
+  name: 'so',
 };
