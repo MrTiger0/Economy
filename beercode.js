@@ -84,35 +84,35 @@ client.on("message", message => {
       .setThumbnail(client.user.avatarURL())
       .setColor("c6df00")
       .setAuthor("The Prefix { S }").setDescription(`
-**<a:emoji_13:870076806160605234>┇___Genaral Commands___
+**📚┇___Genaral Commands___
 bot - avatar - server
 invite - support - kick
 unlock - lock - role 
 clear - server 
 
 
-**<a:emoji_1:870056878464462879>┇___Economy Commands___
+**🪙┇___Economy Commands___
 daily(d) - cash(c) - work(w)
 send - steal - shop(h)
 
 
-**<a:emoji_14:870077202157408337>┇___Game Comamnds___
+**🎮┇___Game Comamnds___
 coinflip(cf) - slots(s)
 senro(so) - fish(f)
 
 
-**<a:emoji_9:870059074333577276>┇___Gif Commands___
+**☣️┇___Gif Commands___
 anime - animel - boy
 girl - baby - coulpe
 smoking - sad - neon - emoji
 
 
-<a:emoji_19:870116007937716255>┇___Photo Commands___
+**🌇┇___Photo Commands___
 pgirl - pboy - pemoji
 panime - pcoulpe
 
 
-<a:emoji_16:870080499220095026>┇Link
+📌┇Link
 [Support Bot](https://discord.gg/ED2KEtqq9B) - [Invite Bot](https://discord.com/api/oauth2/authorize?client_id=840082346921295933&permissions=8&scope=bot) - [YouTube](coming soon) - [Website](coming soon)
 `);
     message.channel.send(embed);
