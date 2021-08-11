@@ -160,7 +160,7 @@ client.on("message", russi => {
         "> <:emoji_80:870361373895454800> Channels : ",
         `${russi.guild.channels.cache.size}`
       )
-      .addField("> 🌍 Region : ", `${russi.guild.region}`)
+      .addField("> <a:emoji_17:875044896619266049> Region : ", `${russi.guild.region}`)
       .setTimestamp(); ///Russi
     russi.channel.send(embed);
   }
