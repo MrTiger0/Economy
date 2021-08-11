@@ -84,35 +84,35 @@ client.on("message", message => {
       .setThumbnail(client.user.avatarURL())
       .setColor("c6df00")
       .setAuthor("The Prefix { > }").setDescription(`
-> **<a:emoji_30:872142584875716689> ┇User Commands**
-bot - avatar - server
-invite - support - kick
-unlock - lock - role 
-clear - server 
+**<a:emoji_30:872142584875716689> ┇User Commands**
+> bot - avatar - server
+> invite - support - kick
+> unlock - lock - role 
+> clear - server 
 
 
-> **<:emoji_63:874713515502501960> ┇Economy Commands**
-daily(d) - cash(c) - work(w)
-send - steal - shop(h)
+**<:emoji_63:874713515502501960> ┇Economy Commands**
+> daily(d) - cash(c) - work(w)
+> send - steal - shop(h)
 
 
-> **<a:emoji_90:870361065786069012> ┇Game Comamnds**
-coinflip(cf) - slots(s)
-senro(so) - fish(f)
+**<a:emoji_90:870361065786069012> ┇Game Comamnds**
+> coinflip(cf) - slots(s)
+> fish(f)
 
 
-> **<a:emoji_19:870357283006205953> ┇Gif Commands**
-anime - animel - boy
-girl - baby - coulpe
-smoking - sad - neon - emoji
+**<a:emoji_19:870357283006205953> ┇Gif Commands**
+> anime - animel - boy
+> girl - baby - coulpe
+> smoking - sad - neon - emoji
 
 
-> **<:emoji_79:870361413644873798> ┇Photo Commands**
-pgirl - pboy - pemoji
-panime - pcoulpe
+**<:emoji_79:870361413644873798> ┇Photo Commands**
+> pgirl - pboy - pemoji
+> panime - pcoulpe
 
 
-**<:emoji_91:870360971825254470> ┇Link**
+> **<:emoji_91:870360971825254470> ┇Link**
 [Support Bot](https://discord.gg/ED2KEtqq9B) - [Invite Bot](https://discord.com/api/oauth2/authorize?client_id=840082346921295933&permissions=8&scope=bot) - [YouTube](coming soon) - [Website](coming soon)
 `);
     message.channel.send(embed);
