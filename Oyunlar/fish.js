@@ -19,7 +19,7 @@ exports.run = async (client, message, args) => {
         message.channel.send(new Discord.MessageEmbed()
                       .setColor("#ffff00")
                         .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
-                        .setDescription(`<a:emoji_22:870143282594865213> For fishing ${time.seconds ? time.seconds + ' you have to wait seconds!' : 'try again!'}`))
+                        .setDescription(`For fishing ${time.seconds ? time.seconds + ' you have to wait seconds!' : 'try again!'}`))
       } else {
      let gerekenpara = 250
      let para = db.fetch(`para_${message.author.id}`)
@@ -27,7 +27,7 @@ exports.run = async (client, message, args) => {
                       .setColor("RED")
                       .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
-                                                .setDescription(`You Can't More Than<:emoji_61:867523675304624148> 250`))
+                                                .setDescription(`You Can't More Than <a:emoji_29:875051721288732762> 250`))
         const result = [
           "WINWIN",
           "LOOSELOOSE"
