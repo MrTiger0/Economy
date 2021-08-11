@@ -32,7 +32,7 @@ if (author !== null && timeout - (Date.now() - author) > 0) {
     let moneyEmbed = new Discord.MessageEmbed()
   .setColor("RED")
   .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))  
-  .setDescription(`<a:emoji_29:870154809582440488> To steal money you need at least 200 💸 coins`);
+  .setDescription(`<a:emoji_29:875051721288732762> To steal money you need at least 200 💸 coins`);
 
 
   if (author2 < 200) {
@@ -55,7 +55,7 @@ db.add(`para_${message.author.id}`, -lostmoney)
   let authorembed = new Discord.MessageEmbed()
   .setColor("RED")
   .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))  
-  .setDescription(`<a:emoji_29:870154809582440488> You think me to undress yourself?!`);
+  .setDescription(`<a:emoji_32:875044848284082247> You think me to undress yourself?!`);
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
     if(user.id === message.author.id) {
     return message.channel.send(authorembed)
