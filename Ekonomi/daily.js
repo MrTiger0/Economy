@@ -24,7 +24,7 @@ let times = await db.fetch(`worktime_${message.author.id}`)
 ${time.hours ? time.hours + " hour": ""} ${time.minutes ? time.minutes + ' minute' : ''} ${time.seconds ? time.seconds+ '' : 're-enter the command!'}`))
   return
   }
-let moneys = rastgeleMiktar(1000000000000, 3000000000000);
+let moneys = rastgeleMiktar(5000, 7000);
       message.channel.send(new Discord.MessageEmbed()
                    .setColor("YELLOW")
                    .setFooter('Kraken Daily')
