@@ -12,7 +12,7 @@ module.exports.run = async (client, message, args) => {
  if(!user) return message.channel.send(new Discord.MessageEmbed()
                       .setColor("RED")
                       .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))                   
-                      .setDescription(`<a:emoji_29:870154809582440488> You have to tag the user whose money you want to steal!`))
+                      .setDescription(`<a:emoji_29:875051721288732762> You have to tag the user whose money you want to steal!`))
   let targetuser = await db.fetch(`para_${user.id}`);
   let author     = await db.fetch(`çalma_${message.author.id}`);
   let author2    = await db.fetch(`para_${message.author.id}`);
@@ -65,7 +65,7 @@ db.add(`para_${message.author.id}`, -lostmoney)
 
   let embed = new Discord.MessageEmbed()
    .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))  
-   .setDescription(`<a:emoji_31:870155756572381205> Robbery Successful, ${user}'you robbed and ${gotmoney} <a:emoji_25:870145821469966406> you won`)
+   .setDescription(`<a:emoji_31:875051634386935880> Robbery Successful, ${user}'you robbed and ${gotmoney} <a:emoji_25:870145821469966406> you won`)
    .setColor("GREEN")
 
    message.channel.send(embed)
