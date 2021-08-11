@@ -24,7 +24,7 @@ if (author !== null && timeout - (Date.now() - author) > 0) {
     let timeEmbed = new Discord.MessageEmbed()
     .setColor("RED")
     .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
-     .setFiled(`<a:emoji_22:870143282594865213> To rob someone ${time.minutes ? time.minutes + ' minute,' : ''} ${time.seconds ? time.seconds + ' you have to wait seconds!' : 'try again!'}`);
+     .setFiled(`<a:emoji_29:875051721288732762> To rob someone ${time.minutes ? time.minutes + ' minute,' : ''} ${time.seconds ? time.seconds + ' you have to wait seconds!' : 'try again!'}`);
     message.channel.send(timeEmbed)
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
   } else {
@@ -42,7 +42,7 @@ var lostmoney = rastgeleMiktar(150,500)
   let moneyEmbed2 = new Discord.MessageEmbed()
   .setColor("RED")
   .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))  
-  .setDescription(`<a:emoji_29:870154809582440488> Faqir you tried to rob someone and ${lostmoney} 💸 you were fined`);
+  .setDescription(`<a:emoji_29:875051721288732762> Faqir you tried to rob someone and ${lostmoney} 💸 you were fined`);
   
 
   //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\ 
