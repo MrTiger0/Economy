@@ -17,7 +17,7 @@ let times = await db.fetch(`çalışmasüresi_${message.author.id}`)
     message.channel.send(new Discord.MessageEmbed()
                         .setColor("RED")
                         .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
-                        .setDescription(`<a:emoji_22:870143282594865213> To work ${time.minutes ? time.minutes + ' minute,' : ''} ${time.seconds ? time.seconds + ' you have to wait seconds!' : 're-enter the command!'}`))
+                        .setDescription(`<a:emoji_29:875051721288732762> To work ${time.minutes ? time.minutes + ' minute,' : ''} ${time.seconds ? time.seconds + ' you have to wait seconds!' : 're-enter the command!'}`))
   return
   }//== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
   let works = ["In the supermarket","At part-time","In the oven","In the factory","In the gallery","In industry","In the Shoe Store","In the technology store"]
@@ -26,7 +26,7 @@ let moneys = rastgeleMiktar(400,100);
       message.channel.send(new Discord.MessageEmbed()
                    .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
                    .setColor("YELLOW")
-                   .setDescription(`${work} you worked and ${moneys} <a:emoji_25:870145821469966406> you won!`))
+                   .setDescription(`${work} you worked and ${moneys} <a:emoji_31:875051634386935880> you won!`))
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
 db.set(`çalışmasüresi_${message.author.id}`, Date.now())
 
