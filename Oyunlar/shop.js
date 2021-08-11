@@ -19,7 +19,7 @@ exports.run = async (client, message, args) => {
         message.channel.send(new Discord.MessageEmbed()
                       .setColor("dfe600")
                         .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
-                        .setDescription(`<a:emoji_22:870143282594865213> For fishing ${time.seconds ? time.seconds + ' you have to wait seconds!' : 'try again!'}`))
+                        .setDescription(`For fishing ${time.seconds ? time.seconds + ' you have to wait seconds!' : 'try again!'}`))
       } else {
      let gerekenpara = 250
      let para = db.fetch(`para_${message.author.id}`)
@@ -27,7 +27,7 @@ exports.run = async (client, message, args) => {
                       .setColor("dfe600")
                       .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
-                                                .setDescription(`You have to rent a fishing line from your uncle for fishing! Money Required: 250 <a:emoji_1:870056878464462879>`))
+                                                .setDescription(`You have to rent a fishing line from your uncle for fishing! Money Required: 250 `))
         const result = [
           "WINWIN",
         ] 
@@ -38,7 +38,7 @@ exports.run = async (client, message, args) => {
     let embed = new Discord.MessageEmbed()
       .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
       .setColor("dfe600")
-      .setDescription(`They're Sold |<a:emoji_1:870056878464462879>|<a:emoji_3:870056915542081557>|<:emoji_24:870144185917902889>|:heart:|- __${kazandın}__ Sold!💸`)
+      .setDescription(`They're Sold |<:emoji_60:872141904383455272>|<:emoji_61:872141800482160641>|<:emoji_58:872142048680091670>|<:emoji_59:872142007471079445>|- __${kazandın}__ Sold!💸`)
       message.channel.send(embed)   
      await db.set(`baliktutma_${message.author.id}`, Date.now());
     await db.add(`para_${message.author.id}`, kazandın);
