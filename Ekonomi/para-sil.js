@@ -38,10 +38,10 @@ db.add(`para_${user.id}`,- money)
 
 exports.conf = {
   enabled: true,
-  aliases: ["money"],
+  aliases: ["deletecash"],
 };
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
 exports.help = {
-  name: 'ipman-delet',
+  name: 'deletecash',
 };
  
