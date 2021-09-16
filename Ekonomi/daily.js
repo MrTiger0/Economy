@@ -26,11 +26,11 @@ ${time.hours ? time.hours + " hour": ""} ${time.minutes ? time.minutes + ' minut
   }
 let moneys = rastgeleMiktar(5000, 8000);
       message.channel.send(new Discord.MessageEmbed()
-                   .setColor("YELLOW")
-                   .setFooter('Kraken Daily')
+                   .setColor("RANDOM")
+                   .setFooter('MoonGame Daily')
                    .setThumbnail('https://media.discordapp.net/attachments/859402172373925918/870071235248263168/image0.gif')
                    .setAuthor(`Daily Crate Claimed`)
-                   .setDescription(`<:emoji_58:874712704626085918>__${moneys}__ was added to your balance`))
+                   .setDescription(`__${moneys}__ was added to your balance`))
 
 db.set(`worktime_${message.author.id}`, Date.now())
 
