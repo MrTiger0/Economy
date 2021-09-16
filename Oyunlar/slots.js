@@ -7,7 +7,7 @@ exports.run = function(client, message,  args) {
   let para = db.fetch(`para_${message.author.id}`)
   if(!miktar) return message.channel.send(new Discord.MessageEmbed()
       .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
-      .setColor("GREEN")
+      .setColor("RANDOM")
       .setDescription(`**slots** You Can't More Than <a:emoji_50:872142301789564969> 50,000`))
   //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
 if(miktar > 50000) return message.channel.send(new Discord.MessageEmbed()
@@ -16,7 +16,7 @@ if(miktar > 50000) return message.channel.send(new Discord.MessageEmbed()
       .setDescription(`**slots**You Can't More Than <a:emoji_50:872142301789564969> 50,000`))
   /////////////
 if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
-  .setColor("#ffff00")
+  .setColor("RANDOM")
   .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
   .setDescription(`In your wallet to place a bet ${para ? "just " + para + ' <a:emoji_50:872142301789564969> there is!' : 'you have no money!'}`))
   /////////////////
