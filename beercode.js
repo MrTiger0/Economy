@@ -8,7 +8,7 @@ const express = require("express");
 const ayarlar = require("./ayarlar.json");
 const Discord = require("discord.js");
 const client = new Discord.Client();
-client.login("ODA3MzUwNTM0OTAxMDcxOTMy.YB2txw.dLGC7fkU60QasBnj63BROnJZ0Io");
+client.login("Nzk2MTY3MTY3MjU0NzI0NjM4.X_T-dA.gGeHelMW8I5dLfk0d09mBeRm11k");
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
 
 //=== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
@@ -20,13 +20,13 @@ require("./util/eventLoader.js")(client);
 
 //===============================================================================\\
 client.on("ready", async () => {
-  client.user.setActivity(`>help | >invite |Server,${client.guilds.cache.size}`, {
+  client.user.setActivity(`2help |Server,${client.guilds.cache.size}`, {
     type: "PLAYING"
   });
 });
 //===============================================================================\\
 client.on("message", emprator => {
-  if (emprator.content === ">invite") {
+  if (emprator.content === "${prefix}invite") {
     emprator.channel.send(
       "https://discord.com/api/oauth2/authorize?client_id=807350534901071932&permissions=8&scope=bot"
     );
@@ -34,7 +34,7 @@ client.on("message", emprator => {
 });
 //===============================================================================\\
 client.on("message", emprator => {
-  if (emprator.content === ">support") {
+  if (emprator.content === "${prefix}support") {
     emprator.channel.send("https://discord.gg/DxytuacsyS");
   }
 });
@@ -79,37 +79,33 @@ client.on("guildDelete", guild => {
 });
 //================================================================================\\
 client.on("message", message => {
-  if (message.content === ">help") {
+  if (message.content === "${prefix}help") {
     const embed = new Discord.MessageEmbed()
       .setThumbnail(client.user.avatarURL())
-      .setColor("c6df00")
-      .setAuthor("The Prefix { > }").setDescription(`
-**<a:emoji_30:872142584875716689> ┇User Commands**
-> bot - avatar - server
-> invite - support - kick
+      .setColor("RANDOM")
+      .setAuthor("Prefix MoonGame { 2 }").setDescription(`
+**User Commands**
+> \`bot\` - \`avatar\` - \`server\`
+> \`invite\` - \`support\` - \`kick\`
 > unlock - lock - role 
 > clear - server 
 
 
-**<:emoji_63:874713515502501960> ┇Economy Commands**
+**Economy Commands**
 > daily(d) - cash(c) - work(w)
 > send - steal - shop(h)
 
 
-**<a:emoji_90:870361065786069012> ┇Game Comamnds**
+**Game Comamnds**
 > coinflip(cf) - slots(s)
 > fish(f)
 
 
-**<a:emoji_19:870357283006205953> ┇Gif Commands**
+**Gif Commands**
 > anime - animel - boy
 > girl - baby - coulpe
 > smoking - sad - neon - emoji
 
-
-**<:emoji_79:870361413644873798> ┇Photo Commands**
-> pgirl - pboy - pemoji
-> panime - pcoulpe
 
 
 > **<:emoji_91:870360971825254470> ┇Link**
