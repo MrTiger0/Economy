@@ -1,1 +1,1 @@
-worker: node beercode.j
+worker: node beercode.js
