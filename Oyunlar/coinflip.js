@@ -44,7 +44,7 @@ if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
         let awnser = result[Math.floor(Math.random() * result.length)]
      if (awnser === "LOOSELOOSE") {
- var kaybettin = miktar*2        
+ var kaybettin = miktar*1       
         //////        
         var text2 = `**<@${message.author.id}> CoinFlip 💶 Choice win Or Lost**`;
           message.channel.send(text2).then(msg => {
@@ -57,7 +57,7 @@ The coin spins... 💰 tail and you lost it all...loose (loose)**`);
       await db.add(`para_${message.author.id}`, -kaybettin);   
       } else { 
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
-          var kazandın = miktar*2
+          var kazandın = miktar*1
         var text2 = `**<@${message.author.id}> CoinFlip 💶 Choice win Or Lost**`;
           message.channel.send(text2).then(msg => {
             setTimeout(() => {
