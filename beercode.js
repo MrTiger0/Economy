@@ -165,12 +165,11 @@ client.on("message", habdo => {
 //===============================================================================\\
 client.on("message", message => {
   if (message.content === "!bot") {
-    const embed = new Discord.MessageEmbed().setColor("RANDOM")
+    const embed = new Discord.MessageEmbed().setColor("36d8ff")
       .setDescription(`
 <:8DE0F56FD6634F3CBC5C29EC7DFE99C5:780063748588044308> | **Server** : **${client.guilds.cache.size}**
-<:6C2A9096792C409297AAA0E7EA05DB2A:780063748555407400> | **Langwich Bot** <:44C01BE16178485A9CA5DFAABE758C87:783484186644185150>
-<:702503859905364040:892889434729623633> | **User** : ${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}1
-
+<:6C2A9096792C409297AAA0E7EA05DB2A:780063748555407400> | **Language Bot** <:44C01BE16178485A9CA5DFAABE758C87:783484186644185150>
+<:702503859905364040:892889434729623633> | **User** : **${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}1**
 <a:793831642401603624:891456264364769290><a:793831642401603624:891456264364769290><a:793831642401603624:891456264364769290><a:793831642401603624:891456264364769290><a:793831642401603624:891456264364769290><a:793831642401603624:891456264364769290>
 <a:867324413267542026:892078131765190686> | **Owner Bot** 
 <@857722289600987137>
@@ -185,7 +184,7 @@ client.on("message", message => {
 client.on("message", async message => {
   if (message.content.startsWith(`<@${client.user.id}>`)) {
     let help = new Discord.MessageEmbed()
-      .setColor("RANDOM")
+      .setColor("36d8ff")
       .setThumbnail(
         ``
       )
@@ -346,7 +345,7 @@ client.on("message", async message => {
       .send({
         embed: {
           description: `Gif Animel`,
-          color: `RANDOM`,
+          color: `36d8ff`,
           image: {
             url: aaaa[Math.floor(Math.random() * aaaa.length)]
           }
@@ -401,7 +400,7 @@ client.on("message", async message => {
       .send({
         embed: {
           description: `Gif Anime`,
-          color: `RANDOM`,
+          color: `36d8ff`,
           image: {
             url: anime[Math.floor(Math.random() * anime.length)]
           }
@@ -448,7 +447,7 @@ client.on("message", async message => {
       .send({
         embed: {
           description: `Gif Baby`,
-          color: `RANDOM`,
+          color: `36d8ff`,
           image: {
             url: baby[Math.floor(Math.random() * baby.length)]
           }
@@ -489,8 +488,8 @@ client.on("message", async message => {
     message.channel
       .send({
         embed: {
-          description: `Gif Boy`,
-          color: `RANDOM`,
+          description: `Gifboy`,
+          color: `36d8ff`,
           image: {
             url: yyyy[Math.floor(Math.random() * yyyy.length)]
           }
@@ -536,7 +535,7 @@ client.on("message", async message => {
       .send({
         embed: {
           description: `Gif Couple`,
-          color: `RANDOM`,
+          color: `36d8ff`,
           image: {
             url: coulpe[Math.floor(Math.random() * coulpe.length)]
           }
@@ -561,7 +560,7 @@ client.on("message", async message => {
       .send({
         embed: {
           description: `Gif Emoji`,
-          color: `RANDOM`,
+          color: `36d8ff`,
           image: {
             url: emoji[Math.floor(Math.random() * emoji.length)]
           }
@@ -604,7 +603,7 @@ client.on("message", async message => {
       .send({
         embed: {
           description: `Gif Girl`,
-          color: `RANDOM`,
+          color: `36d8ff`,
           image: {
             url: girl[Math.floor(Math.random() * girl.length)]
           }
@@ -633,7 +632,7 @@ client.on("message", async message => {
       .send({
         embed: {
           description: `Gif Neon`,
-          color: `RANDOM`,
+          color: `36d8ff`,
           image: {
             url: neon[Math.floor(Math.random() * neon.length)]
           }
@@ -671,7 +670,7 @@ client.on("message", async message => {
       .send({
         embed: {
           description: `Gif Sad`,
-          color: `RANDOM`,
+          color: `36d8ff`,
           image: {
             url: sad[Math.floor(Math.random() * sad.length)]
           }
@@ -719,7 +718,7 @@ client.on("message", async message => {
       .send({
         embed: {
           description: `Gif Smoking`,
-          color: `RANDOM`,
+          color: `36d8ff`,
           image: {
             url: smoking[Math.floor(Math.random() * smoking.length)]
           }
