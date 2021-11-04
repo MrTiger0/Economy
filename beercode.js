@@ -20,13 +20,13 @@ require("./util/eventLoader.js")(client);
 
 //===============================================================================\\
 client.on("ready", async () => {
-  client.user.setActivity(`!help |Server, ${client.guilds.cache.size}`, {
+  client.user.setActivity(`Bhelp |Server, ${client.guilds.cache.size}`, {
     type: "PLAYING"
   });
 });
 //===============================================================================\\
 client.on("message", emprator => {
-  if (emprator.content === "!invite") {
+  if (emprator.content === "Binvite") {
     emprator.channel.send(
       "[invite](https://discord.com/api/oauth2/authorize?client_id=765221994886725652&permissions=8&scope=bot)"
     );
@@ -34,7 +34,7 @@ client.on("message", emprator => {
 });
 //===============================================================================\\
 client.on("message", emprator => {
-  if (emprator.content === "!support") {
+  if (emprator.content === "Bsupport") {
     emprator.channel.send("https://discord.gg/tqW6VXW8CS");
   }
 });
@@ -45,7 +45,7 @@ client.on("message", message => {
   var channel = client.channels.cache.get("869140130387083264");
   if (!channel) return;
   var embed = new Discord.MessageEmbed()
-    .setColor("#0000ff")
+    .setColor("36d8ff")
     .setAuthor(message.author.username, message.author.displayAvatarURL())
     .addField(
       `✅ **New Suggestion**`,
@@ -79,11 +79,11 @@ client.on("guildDelete", guild => {
 });
 //================================================================================\\
 client.on("message", message => {
-  if (message.content === "!help") {
+  if (message.content === "Bhelp") {
     const embed = new Discord.MessageEmbed()
       .setThumbnail(client.user.avatarURL())
-      .setColor("RANDOM")
-      .setAuthor("Prefix BOXBOT { ! }").setDescription(`
+      .setColor("36d8ff")
+      .setAuthor("Prefix BOXBOT { B }").setDescription(`
 
 <a:megaphone:891453230561779772> __**User Commands**__
  \`bot\` - \`avatar\` - \`server\`
@@ -111,11 +111,11 @@ client.on("message", message => {
 });
 //===============================================================================\\
 client.on("message", russi => {
-  if (russi.content === "!server") {
+  if (russi.content === "Bserver") {
     let embed = new Discord.MessageEmbed()
       .setTitle(`${russi.guild.name}`) ///Russi
       .setThumbnail(client.user.avatarURL())
-      .setColor("RANDOM") ///Russi
+      .setColor("36d8ff") ///Russi
       .setFooter(`Requested | ${russi.author.tag}`, russi.author.avatarURL())
       .addField("> 🆔 ID Server :", `${russi.guild.id}`)
       .addField("> :crown: Owner Server :", `${russi.guild.owner}`)
@@ -138,13 +138,13 @@ client.on("message", russi => {
 });
 //===============================================================================\\
 client.on("message", habdo => {
-  if (habdo.content.startsWith("2avatar")) {
+  if (habdo.content.startsWith("Bavatar")) {
     var embed = new Discord.MessageEmbed()
       .setAuthor(
         `${habdo.author.username}`,
         habdo.author.avatarURL({ dynamic: true })
       )
-      .setColor("RANDOM")
+      .setColor("36d8ff")
       .setDescription(
         `**[Avatar Link](${habdo.author.avatarURL({
           dynamic: true,
@@ -164,7 +164,7 @@ client.on("message", habdo => {
 });
 //===============================================================================\\
 client.on("message", message => {
-  if (message.content === "!bot") {
+  if (message.content === "Bbot") {
     const embed = new Discord.MessageEmbed().setColor("36d8ff")
       .setDescription(`
 <:8DE0F56FD6634F3CBC5C29EC7DFE99C5:780063748588044308> | **Server** : **${client.guilds.cache.size}**
