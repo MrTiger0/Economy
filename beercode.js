@@ -85,23 +85,23 @@ client.on("message", message => {
       .setColor("RANDOM")
       .setAuthor("Prefix BOXBOT { ! }").setDescription(`
 __**User Commands**__
-> \`bot\` - \`avatar\` - \`server\`
-> \`invite\` - \`support\`  
+ \`bot\` - \`avatar\` - \`server\`
+ \`invite\` - \`support\`  
 
 __**Economy Commands**__
-> \`daily(d)\` - \`cash(c)\` - \`work(w)\`
-> \`send\` - \`steal\` - \`shop(h)\`
+ \`daily(d)\` - \`cash(c)\` - \`work(w)\` - \`shop(h)\`
+ \`send\` - \`steal\`
 
 __**Game Comamnds**__
-> \`coinflip(cf)\` - \`slots(s)\`
-> \`fish(f)\`
+ \`coinflip(cf)\` - \`slots(s)\`
+ \`fish(f)\`
 
 __**Gif Commands**__
-> \`anime\` - \`animel\` - \`boy\`
-> \`girl\` - \`baby\` - \`coulpe\`
-> \`smoking\` - \`sad\` - \`neon\` - \`emoji\`
+ \`anime\` - \`animel\` - \`boy\`
+ \`girl\` - \`baby\` - \`coulpe\`
+ \`smoking\` - \`sad\` - \`neon\` - \`emoji\`
 
-> __**Link**__
+ __**Link**__
 [Support Bot](https://discord.gg/tqW6VXW8CS) - [Invite BOXBOT](https://discord.com/api/oauth2/authorize?client_id=765221994886725652&permissions=8&scope=bot)  - [Website](coming soon)
 `);
     message.channel.send(embed);
