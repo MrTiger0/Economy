@@ -89,10 +89,10 @@ client.on("message", message => {
  \`bot\` - \`avatar\` - \`server\`
  \`invite\` - \`support\`  
 
+
 <:D99550EF5863457D8697E8B50AD765BD:780076663458365460> __**Economy Commands**__
  \`daily(d)\` - \`cash(c)\` - \`work(w)\` - \`shop(h)\`
  \`send\` - \`steal\`
-
 
 <:ItemController:891215368562040842> __**Game Comamnds**__
  \`coinflip(cf)\` - \`slots(s)\`
@@ -167,10 +167,8 @@ client.on("message", message => {
   if (message.content === "!bot") {
     const embed = new Discord.MessageEmbed().setColor("RANDOM")
       .setDescription(`
-<:2B30C976452A4E6497680F22EB7F929A:780076640910704700> | **Server** : ${client.guilds.cache.size} 
+<:8DE0F56FD6634F3CBC5C29EC7DFE99C5:780063748588044308> | **Server** : **${client.guilds.cache.size}**
 <:6C2A9096792C409297AAA0E7EA05DB2A:780063748555407400> | **Langwich Bot** <:44C01BE16178485A9CA5DFAABE758C87:783484186644185150>
-
-
 <:702503859905364040:892889434729623633> | **User**
 ${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}1
 
@@ -180,9 +178,7 @@ ${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}1
 <@857722289600987137>
 <a:867324402151718932:892090597433823323> | **Admin Bot**
 <@873283800954703912>
-
 <@712407561676259418>
-
 <@699776595317096542>`);
     message.channel.send(embed);
   }
