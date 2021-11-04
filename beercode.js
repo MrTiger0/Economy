@@ -20,22 +20,22 @@ require("./util/eventLoader.js")(client);
 
 //===============================================================================\\
 client.on("ready", async () => {
-  client.user.setActivity(`2help |Server, ${client.guilds.cache.size}`, {
+  client.user.setActivity(`!help |Server, ${client.guilds.cache.size}`, {
     type: "PLAYING"
   });
 });
 //===============================================================================\\
 client.on("message", emprator => {
-  if (emprator.content === "2invite") {
+  if (emprator.content === "!invite") {
     emprator.channel.send(
-      "https://discord.com/api/oauth2/authorize?client_id=807350534901071932&permissions=8&scope=bot"
+      "[invite](https://discord.com/api/oauth2/authorize?client_id=765221994886725652&permissions=8&scope=bot)"
     );
   }
 });
 //===============================================================================\\
 client.on("message", emprator => {
-  if (emprator.content === "2support") {
-    emprator.channel.send("https://discord.gg/DxytuacsyS");
+  if (emprator.content === "!support") {
+    emprator.channel.send("https://discord.gg/tqW6VXW8CS");
   }
 });
 //===============================================================================\\
@@ -79,16 +79,14 @@ client.on("guildDelete", guild => {
 });
 //================================================================================\\
 client.on("message", message => {
-  if (message.content === "2help") {
+  if (message.content === "!help") {
     const embed = new Discord.MessageEmbed()
       .setThumbnail(client.user.avatarURL())
       .setColor("RANDOM")
-      .setAuthor("Prefix MoonGame { 2 }").setDescription(`
+      .setAuthor("Prefix BOXBOT { ! }").setDescription(`
 **User Commands**
 > \`bot\` - \`avatar\` - \`server\`
-> \`invite\` - \`support\` - \`kick\`
-> \`unlock\` - \`lock\` - \`role\`
-> \`clear\` - \`server\` 
+> \`invite\` - \`support\`  
 
 
 **Economy Commands**
@@ -109,34 +107,14 @@ client.on("message", message => {
 
 
 > **Link**
-[Support Bot](https://discord.gg/progresshome) - [Invite MoonGame](https://discord.com/api/oauth2/authorize?client_id=807350534901071932&permissions=8&scope=bot) - [YouTube](coming soon) - [Website](coming soon)
+[Support Bot](https://discord.gg/tqW6VXW8CS) - [Invite BOXBOT](https://discord.com/api/oauth2/authorize?client_id=765221994886725652&permissions=8&scope=bot)  - [Website](coming soon)
 `);
     message.channel.send(embed);
   }
 });
 //===============================================================================\\
-client.on("message", msg => {
-  if (msg.content.startsWith("2clear")) {
-    let args = msg.content.split(" ").slice(1);
-
-    if (!msg.member.hasPermission("MANAGE_MESSAGES"))
-      return msg.channel.send("You can't use this command!");
-
-    if (!args[0])
-      return msg.channel.send("Specify how many messages you want to delete.");
-
-    msg.delete();
-
-    msg.channel.bulkDelete(args[0]).catch(e => {
-      msg.channel.send("You can only delete 100 messages at once.");
-    });
-
-    msg.channel.send(`Delete Message`).then(m => m.delete({ timeout: 5000 }));
-  }
-});
-//===============================================================================\\
 client.on("message", russi => {
-  if (russi.content === "2server") {
+  if (russi.content === "!server") {
     let embed = new Discord.MessageEmbed()
       .setTitle(`${russi.guild.name}`) ///Russi
       .setThumbnail(client.user.avatarURL())
@@ -159,30 +137,6 @@ client.on("message", russi => {
       .addField("> Region : ", `${russi.guild.region}`)
       .setTimestamp(); ///Russi
     russi.channel.send(embed);
-  }
-});
-//===============================================================================\\
-client.on("message", habdo => {
-  if (habdo.content.startsWith("2kick")) {
-    if (!habdo.guild) return;
-    if (!habdo.member.hasPermission("KICK_MEMBERS"))
-      return habdo.reply("**You don t have a ram**");
-    let user = habdo.mentions.users.first();
-    if (!user) return habdo.reply("**Kick A Member User**");
-    habdo.guild.member(user).kick();
-    habdo.channel.send(`**✈ \`${user}\` Kicked from the server.**`);
-  }
-});
-//===============================================================================\\
-client.on("message", message => {
-  if (message.content.startsWith("2role")) {
-    var roles = message.guild.roles.cache
-      .map(roles => `${roles.name}, `)
-      .join(" ");
-    let embed = new Discord.MessageEmbed()
-      .setColor("RANDOM")
-      .addField("**Roles Server:**", `**[${roles}]**`);
-    message.channel.send(embed);
   }
 });
 //===============================================================================\\
@@ -213,7 +167,7 @@ client.on("message", habdo => {
 });
 //===============================================================================\\
 client.on("message", message => {
-  if (message.content === "2bot") {
+  if (message.content === "!bot") {
     const embed = new Discord.MessageEmbed().setColor("RANDOM")
       .setDescription(`
 >| Server
@@ -230,44 +184,6 @@ ${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}
   }
 });
 //===============================================================================\\
-client.on("message", message => {
-  if (message.content === "2lock") {
-    if (!message.member.hasPermission("MANAGE_CHANNELS")) return;
-    message.delete();
-
-    if (!message.channel.guild) return;
-
-    let bwan = new Discord.MessageEmbed()
-
-      .setFooter("Has Been Channel Lock")
-      .setColor("RANDOM");
-    message.channel.send(bwan);
-
-    message.channel.updateOverwrite(message.guild.id, {
-      SEND_MESSAGES: false
-    });
-  }
-});
-////////////////////////////////////////////////////////////////
-
-//////////////////////////////////////////////////////////////////client.on("message", message => { if (message.content === prefix + "lockall") 
-client.on("message", message => {
-  if (message.content === "2unlock") {
-    if (!message.member.hasPermission("MANAGE_CHANNELS")) return;
-    message.delete();
-
-    if (!message.channel.guild) return message.reply("SORRY IM IN SERVER");
-    let bwan = new Discord.MessageEmbed()
-      .setFooter("Has Been Channel unlock")
-      .setColor("RANDOM");
-    message.channel.send(bwan);
-
-    message.channel.updateOverwrite(message.guild.id, {
-      SEND_MESSAGES: true
-    });
-  }
-});
-//===============================================================================\\
 client.on("message", async message => {
   if (message.content.startsWith(`<@${client.user.id}>`)) {
     let help = new Discord.MessageEmbed()
@@ -277,14 +193,14 @@ client.on("message", async message => {
       )
    .setAuthor(client.user.username, client.user.avatarURL()).setDescription(`
    
- | MoonGame Prefix 2
+ | **BOXBOT Prefix >**
 
       
- | MoonGame [Support](https://discord.gg/DxytuacsyS)
+ | **BOXBOT** [Support](https://discord.gg/DxytuacsyS)
 
- | MoonGame [Invite](https://discord.com/api/oauth2/authorize?client_id=807350534901071932&permissions=8&scope=bot)
+ | **BOXBOT** [Invite](https://discord.com/api/oauth2/authorize?client_id=807350534901071932&permissions=8&scope=bot)
 
- | MoonGame [Website](coming soon)`);
+ | **BOXBOT** [Website](coming soon)`);
 
     message.channel.send(help);
   }
@@ -425,7 +341,7 @@ var aaaa = [
   "https://cdn.discordapp.com/attachments/733640065200160768/737282991348252683/tenor_13.gif"
 ];
 client.on("message", async message => {
-  if (message.content === "2animal") {
+  if (message.content === "!animal") {
     if (message.author.bot) return;
     if (!message.channel.guild) return message.reply();
     message.channel
@@ -480,7 +396,7 @@ var anime = [
   "https://cdn.discordapp.com/attachments/694694884459937862/735621470969135217/sasuke_al_moj.gif"
 ];
 client.on("message", async message => {
-  if (message.content === "2anime") {
+  if (message.content === "!anime") {
     if (message.author.bot) return;
     if (!message.channel.guild) return message.reply();
     message.channel
@@ -527,7 +443,7 @@ var baby = [
   "https://cdn.discordapp.com/attachments/699339066029768796/730499512602329198/14.gif"
 ];
 client.on("message", async message => {
-  if (message.content === "2baby") {
+  if (message.content === "!baby") {
     if (message.author.bot) return;
     if (!message.channel.guild) return message.reply();
     message.channel
@@ -569,7 +485,7 @@ var yyyy = [
   "https://cdn.discordapp.com/attachments/694693923486171177/737203076691394570/a_e8727598fec06c471cc305358b97596b.gif"
 ];
 client.on("message", async message => {
-  if (message.content === "2boy") {
+  if (message.content === "!boy") {
     if (message.author.bot) return;
     if (!message.channel.guild) return message.reply();
     message.channel
@@ -615,7 +531,7 @@ var coulpe = [
   "https://cdn.discordapp.com/attachments/694694675679936585/736897942342074428/a_8634244b88f7dc8eebbf416640489ef2.gif"
 ];
 client.on("message", async message => {
-  if (message.content === "2couple") {
+  if (message.content === "!couple") {
     if (message.author.bot) return;
     if (!message.channel.guild) return message.reply();
     message.channel
@@ -640,7 +556,7 @@ var emoji = [
   "https://media.discordapp.net/attachments/699520919328129055/803613686656401418/Haraketli_Emoji_261.gif"
 ];
 client.on("message", async message => {
-  if (message.content === "2emoji") {
+  if (message.content === "!emoji") {
     if (message.author.bot) return;
     if (!message.channel.guild) return message.reply();
     message.channel
@@ -683,7 +599,7 @@ var girl = [
   "https://cdn.discordapp.com/attachments/787757651752779826/800852701335912498/image3-1.gif"
 ];
 client.on("message", async message => {
-  if (message.content === "2girl") {
+  if (message.content === "!girl") {
     if (message.author.bot) return;
     if (!message.channel.guild) return message.reply();
     message.channel
@@ -712,7 +628,7 @@ var neon = [
   "https://cdn.discordapp.com/attachments/764927608013193276/793756092261072936/image0.gif"
 ];
 client.on("message", async message => {
-  if (message.content === "2neon") {
+  if (message.content === "!neon") {
     if (message.author.bot) return;
     if (!message.channel.guild) return message.reply();
     message.channel
@@ -750,7 +666,7 @@ var sad = [
   "https://cdn.discordapp.com/attachments/810651927334748180/810651982611742750/image0.gif"
 ];
 client.on("message", async message => {
-  if (message.content === "2sad") {
+  if (message.content === "!sad") {
     if (message.author.bot) return;
     if (!message.channel.guild) return message.reply();
     message.channel
@@ -798,7 +714,7 @@ var smoking = [
   "https://cdn.discordapp.com/attachments/755893014915711047/826497192579170344/a_9b2ed05b287fc58858272fa4294a293b-1.gif"
 ];
 client.on("message", async message => {
-  if (message.content === "2smoking") {
+  if (message.content === "!smoking") {
     if (message.author.bot) return;
     if (!message.channel.guild) return message.reply();
     message.channel
