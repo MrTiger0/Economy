@@ -47,14 +47,14 @@ if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
   if (slots[result1] === slots[result2] && slots[result2] === slots[result3] ) {
     var text2 = `**
     ___SLOTS___  
-|<a:emoji_56:872142091059355690><a:emoji_56:872142091059355690><a:emoji_56:872142091059355690>|${message.author.username}
+|🍌🥭🍌|${message.author.username}
 |                  |
 |                  |**`;
           message.channel.send(text2).then(msg => {
             setTimeout(() => {
               msg.edit(`**
     ___SLOTS___  
-|${slots[result1]}${slots[result2]}${slots[result3]}${message.author.username}<a:emoji_10:870059089055592508> ${kazandin}+
+|${slots[result1]}${slots[result2]}${slots[result3]}${message.author.username} ${kazandin}+
 |                  |
 |                  |**`,true);
             }, 3500);
@@ -65,7 +65,7 @@ if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
   } else {
     var text3 = `**
     ___SLOTS___  
-|<a:emoji_56:872142091059355690><a:emoji_56:872142091059355690><a:emoji_56:872142091059355690>|${message.author.username}
+|🍌🍌🍌|${message.author.username}
 |                  |
 |                  |**`;
           message.channel.send(text3).then(msg => {
