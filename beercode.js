@@ -84,7 +84,8 @@ client.on("message", message => {
       .setThumbnail(client.user.avatarURL())
       .setColor("RANDOM")
       .setAuthor("Prefix BOXBOT { ! }").setDescription(`
-<:0B1CB88248FC4A2BB4D3CA4E081C2F9F:780063748575592488> __**User Commands**__
+
+<a:megaphone:891453230561779772> __**User Commands**__
  \`bot\` - \`avatar\` - \`server\`
  \`invite\` - \`support\`  
 
@@ -166,16 +167,21 @@ client.on("message", message => {
   if (message.content === "!bot") {
     const embed = new Discord.MessageEmbed().setColor("RANDOM")
       .setDescription(`
->| Server
+<:2B30C976452A4E6497680F22EB7F929A:780076640910704700> | **Server**
 ${client.guilds.cache.size}
->| Channel
-${client.channels.cache.size}
->| User
-${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}
->| Owner Bot 
+ | **Langwich Bot**
+Java Script <:44C01BE16178485A9CA5DFAABE758C87:783484186644185150>
+
+<a:680696347577286656:891778449507766282> | **User**
+${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}1
+
+<a:867324413267542026:892078131765190686> | **Owner Bot** 
+<@857722289600987137>
+
+<a:867324402151718932:892090597433823323> | **Admin Bot**
+<@873283800954703912>
 <@712407561676259418>
->| Prefix Bot
-2`);
+<@699776595317096542>`);
     message.channel.send(embed);
   }
 });
@@ -189,14 +195,14 @@ client.on("message", async message => {
       )
    .setAuthor(client.user.username, client.user.avatarURL()).setDescription(`
    
- | **BOXBOT Prefix >**
+<:691C61BD6CDC496194EC3819DACBF8A1:780076663236067339> | **BOXBOT Prefix : !**
 
       
- | **BOXBOT** [Support](https://discord.gg/DxytuacsyS)
+<:691C61BD6CDC496194EC3819DACBF8A1:780076663236067339> | **BOXBOT** [Support](https://discord.gg/tqW6VXW8CS)
 
- | **BOXBOT** [Invite](https://discord.com/api/oauth2/authorize?client_id=807350534901071932&permissions=8&scope=bot)
+<:691C61BD6CDC496194EC3819DACBF8A1:780076663236067339> | **BOXBOT** [Invite](https://discord.com/api/oauth2/authorize?client_id=765221994886725652&permissions=8&scope=bot)
 
- | **BOXBOT** [Website](coming soon)`);
+<:691C61BD6CDC496194EC3819DACBF8A1:780076663236067339> | **BOXBOT** [Website](coming soon)`);
 
     message.channel.send(help);
   }
