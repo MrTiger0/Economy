@@ -84,29 +84,24 @@ client.on("message", message => {
       .setThumbnail(client.user.avatarURL())
       .setColor("RANDOM")
       .setAuthor("Prefix BOXBOT { ! }").setDescription(`
-**User Commands**
+__**User Commands**__
 > \`bot\` - \`avatar\` - \`server\`
 > \`invite\` - \`support\`  
 
-
-**Economy Commands**
+__**Economy Commands**__
 > \`daily(d)\` - \`cash(c)\` - \`work(w)\`
 > \`send\` - \`steal\` - \`shop(h)\`
 
-
-**Game Comamnds**
+__**Game Comamnds**__
 > \`coinflip(cf)\` - \`slots(s)\`
 > \`fish(f)\`
 
-
-**Gif Commands**
+__**Gif Commands**__
 > \`anime\` - \`animel\` - \`boy\`
 > \`girl\` - \`baby\` - \`coulpe\`
 > \`smoking\` - \`sad\` - \`neon\` - \`emoji\`
 
-
-
-> **Link**
+> __**Link**__
 [Support Bot](https://discord.gg/tqW6VXW8CS) - [Invite BOXBOT](https://discord.com/api/oauth2/authorize?client_id=765221994886725652&permissions=8&scope=bot)  - [Website](coming soon)
 `);
     message.channel.send(embed);
