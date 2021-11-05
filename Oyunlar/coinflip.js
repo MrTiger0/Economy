@@ -61,8 +61,8 @@ The coin spins... 💰 tail and you lost it all... :c`);
         var text2 = `**<@${message.author.id}> CoinFlip <a:emoji_52:878634024271224872> Choice win Or Lost**`;
           message.channel.send(text2).then(msg => {
             setTimeout(() => {
-              msg.edit(`<@${message.author.id}> spent <:emoji_75:905991272370696202> ${kazandın} and chose heads
-The coin spins... 💰 coinflip <:emoji_75:905991272370696202> (**win**)`);
+              msg.edit(`<@${message.author.id}> spent <:emoji_75:905991272370696202> ${kazandın} and chose **heads**
+The coin spins... 💰 and you won `);
             }, 3000);
           });
     await db.set(`bahisoynama_${message.author.id}`, Date.now());   
