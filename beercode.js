@@ -25,25 +25,20 @@ client.on("ready", async () => {
   });
 });
 //===============================================================================\\
-client.on('messageCreate', message => {
-  if (!p[message.guild.id])
-    p[message.guild.id] = {
-      prefix: "B"
-    };
-  const prefix = p[message.guild.id].prefix 
-  if(message.content.startsWith(prefix + `invite`)){
-    if(!blacklist[message.author.id])
-blacklist[message.author.id] = {
-Blacklist: "OFF"
-}
-  if(blacklist[message.author.id].Blacklist === "ON")return message.reply("Sorry You Have Been Added On BlackList To Remove Talk To <@744957669164712050>")
-    var embed = new MessageEmbed()
-    .setTitle("Click Here")
-    .setURL("https://discord.com/api/oauth2/authorize?client_id=765221994886725652&permissions=8&scope=bot")
-    .setTimestamp()
-    .setFooter(`Requested By | ${message.author.username}`)
-    .setColor("36d8ff")
-    message.channel.send({embeds: [embed]})
+client.on("message", message => {
+  if (message.content === prefix + "invite") {
+    if (!message.channel.guild)
+      return message.reply(
+        "Please Do not type bot commands in bot private chat"
+      );
+    let embed = new Discord.MessageEmbed()
+      .setColor("36d8ff")
+      .setTitle("__click touch for link bot__")
+      .setURL(
+        "https://discord.com/api/oauth2/authorize?client_id=799228179784794183&permissions=8&scope=bot"
+      );
+    message.channel.send(embed);
+     message.react("✔️");
   }
 });
 //===============================================================================\\
