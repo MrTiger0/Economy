@@ -53,7 +53,7 @@ if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
           message.channel.send(text2).then(msg => {
             setTimeout(() => {
               msg.edit(`**
-    `___SLOTS___`  
+    ___SLOTS___  
 |${slots[result1]}${slots[result2]}${slots[result3]}${message.author.username} ${kazandin}+
 |                  |
 |                  |**`,true);
@@ -64,7 +64,7 @@ if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
   } else {
     var text3 = `**
-    `___SLOTS___`  
+    ___SLOTS___  
 |<a:766617203050938398:891462862667644938><a:766617203050938398:891462862667644938><a:766617203050938398:891462862667644938>|${message.author.username}
 |                  |
 |                  |**`;
