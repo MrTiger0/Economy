@@ -17,14 +17,14 @@ exports.run = async (client, message, args) => {
         let time = ms(timeout - (Date.now() - crime));
     
         message.channel.send(new Discord.MessageEmbed()
-                      .setColor("RANDOM")
+                      .setColor("36d8ff")
                         .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
                         .setDescription(`For fishing ${time.seconds ? time.seconds + ' you have to wait seconds!' : 'try again!'}`))
       } else {
      let gerekenpara = 250
      let para = db.fetch(`para_${message.author.id}`)
      if(para < 250) return message.channel.send(new Discord.MessageEmbed()
-                      .setColor("RED")
+                      .setColor("36d8ff")
                       .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
                                                 .setDescription(`You Can't More Than <a:emoji_29:875051721288732762> 250`))
@@ -41,7 +41,7 @@ exports.run = async (client, message, args) => {
  var kaybettin = 300         
       message.channel.send(new Discord.MessageEmbed()
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
-                           .setColor("RANDOM")
+                           .setColor("36d8ff")
                       .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
                       .setDescription(`${cümle} and ${kaybettin} 💸 you lost!`));
          
@@ -53,7 +53,7 @@ exports.run = async (client, message, args) => {
          var kazandın = rastgeleMiktar(350,600)
     let embed = new Discord.MessageEmbed()
       .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
-      .setColor("RANDOM")
+      .setColor("36d8ff")
       .setDescription(`${sentence2} and uncle to you ${kazandın} 💸 paid!`)
       message.channel.send(embed)   
      await db.set(`baliktutma_${message.author.id}`, Date.now());
