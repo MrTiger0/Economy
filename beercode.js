@@ -25,13 +25,21 @@ client.on("ready", async () => {
   });
 });
 //===============================================================================\\
-client.on("message", message => {
-  if (message.content === "Binvite") {
-    const embed = new Discord.MessageEmbed()
+client.on("message", async message => {
+  if (message.content.startsWith(`Binvite`)) {
+    let help = new Discord.MessageEmbed()
       .setColor("36d8ff")
-      .setField(`
-[invite](https://discord.com/api/oauth2/authorize?client_id=765221994886725652&permissions=8&scope=bot)
-`)
+      .setThumbnail(
+        ``
+      )
+   .setAuthor(client.user.username, client.user.avatarURL()).setDescription(`
+      
+<:691C61BD6CDC496194EC3819DACBF8A1:780076663236067339> | **BOXBOT** [Invite](https://discord.com/api/oauth2/authorize?client_id=765221994886725652&permissions=8&scope=bot)
+
+
+    message.channel.send(help);
+  }
+});
 //===============================================================================\\
 client.on("message", emprator => {
   if (emprator.content === "Bsupport") {
@@ -190,7 +198,7 @@ client.on("message", async message => {
       )
    .setAuthor(client.user.username, client.user.avatarURL()).setDescription(`
    
-<:691C61BD6CDC496194EC3819DACBF8A1:780076663236067339> | **BOXBOT Prefix : !**
+<:691C61BD6CDC496194EC3819DACBF8A1:780076663236067339> | **BOXBOT Prefix : B**
 
       
 <:691C61BD6CDC496194EC3819DACBF8A1:780076663236067339> | **BOXBOT** [Support](https://discord.gg/tqW6VXW8CS)
