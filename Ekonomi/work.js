@@ -15,7 +15,7 @@ let times = await db.fetch(`çalışmasüresi_${message.author.id}`)
   if (times !== null && day - (Date.now() - times) > 0) {
         let time = ms(day - (Date.now() - times));
     message.channel.send(new Discord.MessageEmbed()
-                        .setColor("RED")
+                        .setColor("36d8ff")
                         .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
                         .setDescription(` To work ${time.minutes ? time.minutes + ' minute,' : ''} ${time.seconds ? time.seconds + ' you have to wait seconds!' : 're-enter the command!'}`))
   return
@@ -25,8 +25,8 @@ let times = await db.fetch(`çalışmasüresi_${message.author.id}`)
 let moneys = rastgeleMiktar(400,100);
       message.channel.send(new Discord.MessageEmbed()
                    .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
-                   .setColor("RANDOM")
-                   .setDescription(`${work} you worked and ${moneys} <a:emoji_31:875051634386935880> you won!`))
+                   .setColor("36d8ff")
+                   .setDescription(`${work} you worked and ${moneys} 💸 you won!`))
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
 db.set(`çalışmasüresi_${message.author.id}`, Date.now())
 
