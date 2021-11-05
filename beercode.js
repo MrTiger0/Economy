@@ -25,11 +25,25 @@ client.on("ready", async () => {
   });
 });
 //===============================================================================\\
-client.on("message", emprator => {
-  if (emprator.content === "Binvite") {
-    emprator.channel.send(
-      "[invite](https://discord.com/api/oauth2/authorize?client_id=765221994886725652&permissions=8&scope=bot)"
-    );
+client.on('messageCreate', message => {
+  if (!p[message.guild.id])
+    p[message.guild.id] = {
+      prefix: "B"
+    };
+  const prefix = p[message.guild.id].prefix 
+  if(message.content.startsWith(prefix + `invite`)){
+    if(!blacklist[message.author.id])
+blacklist[message.author.id] = {
+Blacklist: "OFF"
+}
+  if(blacklist[message.author.id].Blacklist === "ON")return message.reply("Sorry You Have Been Added On BlackList To Remove Talk To <@744957669164712050>")
+    var embed = new MessageEmbed()
+    .setTitle("Click Here")
+    .setURL("https://discord.com/api/oauth2/authorize?client_id=765221994886725652&permissions=8&scope=bot")
+    .setTimestamp()
+    .setFooter(`Requested By | ${message.author.username}`)
+    .setColor("36d8ff")
+    message.channel.send({embeds: [embed]})
   }
 });
 //===============================================================================\\
