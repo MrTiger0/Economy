@@ -46,7 +46,7 @@ if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
      if (awnser === "LOOSELOOSE") {
  var kaybettin = miktar*1       
         //////        
-        var text2 = `**<@${message.author.id}> <a:emoji_52:878634024271224872> and chose **heads** the coin spins...`;
+        var text2 = `<@${message.author.id}> spent <a:emoji_52:878634024271224872> ${kazandın} and chose **heads** the coin spins...`;
           message.channel.send(text2).then(msg => {
             setTimeout(() => {
               msg.edit(`<@${message.author.id}>spent <:emoji_75:905991272370696202> ${-kaybettin}  and chose **heads**
@@ -58,7 +58,7 @@ The coin spins... 💰 tail and you lost it all... :c`);
       } else { 
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
           var kazandın = miktar*1
-        var text2 = `**<@${message.author.id}> <a:emoji_52:878634024271224872> and chose **heads** the coin spins...`;
+        var text2 = `<@${message.author.id}> spent <a:emoji_52:878634024271224872> ${kazandın} and chose **heads** the coin spins...`;
           message.channel.send(text2).then(msg => {
             setTimeout(() => {
               msg.edit(`<@${message.author.id}> spent <:emoji_75:905991272370696202> ${kazandın} and chose **heads**
