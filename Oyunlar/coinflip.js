@@ -46,7 +46,7 @@ if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
      if (awnser === "LOOSELOOSE") {
  var kaybettin = miktar*1       
         //////        
-        var text2 = `**<@${message.author.id}> CoinFlip <:emoji_75:905991272370696202> Choice win Or Lost**`;
+        var text2 = `**<@${message.author.id}> CoinFlip <a:emoji_52:878634024271224872> Choice win Or Lost**`;
           message.channel.send(text2).then(msg => {
             setTimeout(() => {
               msg.edit(`<@${message.author.id}>spent <:emoji_75:905991272370696202> ${-kaybettin}  and chose **heads**
