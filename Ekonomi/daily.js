@@ -15,9 +15,9 @@ let times = await db.fetch(`worktime_${message.author.id}`)
   if (times !== null && day - (Date.now() - times) > 0) {
         let time = ms(day - (Date.now() - times));
     message.channel.send(new Discord.MessageEmbed()
-                        .setColor("GREEN")
+                        .setColor("36d8ff")
                         .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
-                        .setDescription(`<a:time_clock:863850499991142410> You Have A Cooldown For __daily__
+                        .setDescription(`⏱️ You Have A Cooldown For __daily__
                         
   **Time Left**
   
@@ -26,7 +26,7 @@ ${time.hours ? time.hours + " hour": ""} ${time.minutes ? time.minutes + ' minut
   }
 let moneys = rastgeleMiktar(5000, 8000);
       message.channel.send(new Discord.MessageEmbed()
-                   .setColor("RANDOM")
+                   .setColor("36d8ff")
                    .setFooter('BOXBOT Daily')
                    .setThumbnail('https://media.discordapp.net/attachments/859402172373925918/870071235248263168/image0.gif')
                    .setAuthor(`Daily Crate Claimed`)
