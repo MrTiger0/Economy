@@ -18,28 +18,28 @@ module.exports.run = async (client, message, args) => {
   //-----------------------------------------------------------------------------------------------------\\
  if(miktar === 'all' || args[0] === 'all') {
    if(bankapara === 0) return message.channel.send(new Discord.MessageEmbed()
-.setColor("RED")
+.setColor("36d8ff")
 .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
 .setDescription(`⛔ You have no money to withdraw from the bank!`))
 db.add(`bankapara_${message.author.id}`, -bankapara)
 db.add(`para_${message.author.id}`, bankapara)   
 message.channel.send(new Discord.MessageEmbed()
-.setColor("GREEN")
+.setColor("36d8ff")
 .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
 .setDescription(`✅ Successful, from the bank ${bankapara} 💸 you pulled!`))
 } else {
     if(isNaN(miktar)) return message.channel.send(new Discord.MessageEmbed()
-.setColor("RED")//== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
+.setColor("36d8ff")//== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
 .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
 .setDescription(`🤔 The amount you entered is not a valid number !?`))  
   }//== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
 //-----------------------------------------------------------------------------------------------------\\
       if(miktar < 0 || miktar.startsWith('0')) return message.channel.send(new Discord.MessageEmbed()
-.setColor("RED")
+.setColor("36d8ff")
 .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
 .setDescription(`🤔 The amount you entered is not a valid number !?`))
    if (miktar > bankapara) return message.channel.send(new Discord.MessageEmbed()
-.setColor("RED")
+.setColor("36d8ff")
 .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
 .setDescription(`⛔ Now only in the bank ${bankapara} 💸 there is`))
   
@@ -48,7 +48,7 @@ if(args[0] === 'all' || args[0] === 'all') {
   return;//== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
 }  else {
 message.channel.send(new Discord.MessageEmbed()
-.setColor("GREEN")
+.setColor("36d8ff")
 .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
 .setDescription(`✅ Successful, from the bank ${miktar} 💸 you pulled!`))
 db.add(`para_${message.author.id}`, miktar)
