@@ -50,7 +50,7 @@ if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
           message.channel.send(text2).then(msg => {
             setTimeout(() => {
               msg.edit(`<@${message.author.id}>spent <:emoji_75:905991272370696202> ${-kaybettin}  and chose **heads**
-The coin spins... 💰 tail and you lost it all... :c`);
+The coin spins...💰 tail and you **lost** it all... :c`);
             }, 3000);
           });
       await db.set(`bahisoynama_${message.author.id}`, Date.now());   
@@ -62,7 +62,7 @@ The coin spins... 💰 tail and you lost it all... :c`);
           message.channel.send(text2).then(msg => {
             setTimeout(() => {
               msg.edit(`<@${message.author.id}> spent <:emoji_75:905991272370696202> ${kazandın} and chose **heads**
-The coin spins... 💰 and you won `);
+The coin spins...💰 and you **won** `);
             }, 3000);
           });
     await db.set(`bahisoynama_${message.author.id}`, Date.now());   
