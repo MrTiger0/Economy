@@ -338,7 +338,7 @@ var aaaa = [
   "https://cdn.discordapp.com/attachments/733640065200160768/737282991348252683/tenor_13.gif"
 ];
 client.on("message", async message => {
-  if (message.content === "!animal") {
+  if (message.content === "Banimal") {
     if (message.author.bot) return;
     if (!message.channel.guild) return message.reply();
     message.channel
@@ -393,7 +393,7 @@ var anime = [
   "https://cdn.discordapp.com/attachments/694694884459937862/735621470969135217/sasuke_al_moj.gif"
 ];
 client.on("message", async message => {
-  if (message.content === "!anime") {
+  if (message.content === "Banime") {
     if (message.author.bot) return;
     if (!message.channel.guild) return message.reply();
     message.channel
@@ -440,7 +440,7 @@ var baby = [
   "https://cdn.discordapp.com/attachments/699339066029768796/730499512602329198/14.gif"
 ];
 client.on("message", async message => {
-  if (message.content === "!baby") {
+  if (message.content === "Bbaby") {
     if (message.author.bot) return;
     if (!message.channel.guild) return message.reply();
     message.channel
@@ -482,7 +482,7 @@ var yyyy = [
   "https://cdn.discordapp.com/attachments/694693923486171177/737203076691394570/a_e8727598fec06c471cc305358b97596b.gif"
 ];
 client.on("message", async message => {
-  if (message.content === "!boy") {
+  if (message.content === "Bboy") {
     if (message.author.bot) return;
     if (!message.channel.guild) return message.reply();
     message.channel
@@ -528,7 +528,7 @@ var coulpe = [
   "https://cdn.discordapp.com/attachments/694694675679936585/736897942342074428/a_8634244b88f7dc8eebbf416640489ef2.gif"
 ];
 client.on("message", async message => {
-  if (message.content === "!couple") {
+  if (message.content === "Bcouple") {
     if (message.author.bot) return;
     if (!message.channel.guild) return message.reply();
     message.channel
@@ -553,7 +553,7 @@ var emoji = [
   "https://media.discordapp.net/attachments/699520919328129055/803613686656401418/Haraketli_Emoji_261.gif"
 ];
 client.on("message", async message => {
-  if (message.content === "!emoji") {
+  if (message.content === "Bemoji") {
     if (message.author.bot) return;
     if (!message.channel.guild) return message.reply();
     message.channel
@@ -596,7 +596,7 @@ var girl = [
   "https://cdn.discordapp.com/attachments/787757651752779826/800852701335912498/image3-1.gif"
 ];
 client.on("message", async message => {
-  if (message.content === "!girl") {
+  if (message.content === "Bgirl") {
     if (message.author.bot) return;
     if (!message.channel.guild) return message.reply();
     message.channel
@@ -625,7 +625,7 @@ var neon = [
   "https://cdn.discordapp.com/attachments/764927608013193276/793756092261072936/image0.gif"
 ];
 client.on("message", async message => {
-  if (message.content === "!neon") {
+  if (message.content === "Bneon") {
     if (message.author.bot) return;
     if (!message.channel.guild) return message.reply();
     message.channel
@@ -663,7 +663,7 @@ var sad = [
   "https://cdn.discordapp.com/attachments/810651927334748180/810651982611742750/image0.gif"
 ];
 client.on("message", async message => {
-  if (message.content === "!sad") {
+  if (message.content === "Bsad") {
     if (message.author.bot) return;
     if (!message.channel.guild) return message.reply();
     message.channel
@@ -711,7 +711,7 @@ var smoking = [
   "https://cdn.discordapp.com/attachments/755893014915711047/826497192579170344/a_9b2ed05b287fc58858272fa4294a293b-1.gif"
 ];
 client.on("message", async message => {
-  if (message.content === "!smoking") {
+  if (message.content === "Bsmoking") {
     if (message.author.bot) return;
     if (!message.channel.guild) return message.reply();
     message.channel
