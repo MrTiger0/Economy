@@ -26,21 +26,12 @@ client.on("ready", async () => {
 });
 //===============================================================================\\
 client.on("message", message => {
-  if (message.content === prefix + "invite") {
-    if (!message.channel.guild)
-      return message.reply(
-        "Please Do not type bot commands in bot private chat"
-      );
-    let embed = new Discord.MessageEmbed()
+  if (message.content === "Binvite") {
+    const embed = new Discord.MessageEmbed()
+      .setThumbnail(client.user.avatarURL())
       .setColor("36d8ff")
-      .setTitle("__click touch for link bot__")
-      .setURL(
-        "https://discord.com/api/oauth2/authorize?client_id=799228179784794183&permissions=8&scope=bot"
-      );
-    message.channel.send(embed);
-     message.react("✔️");
-  }
-});
+      .setAuthor("Prefix BOXBOT { B }").setDescription(`
+[Invite](https://discord.com/api/oauth2/authorize?client_id=765221994886725652&permissions=8&scope=bot)`)
 //===============================================================================\\
 client.on("message", emprator => {
   if (emprator.content === "Bsupport") {
