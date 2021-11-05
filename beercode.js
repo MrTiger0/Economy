@@ -25,13 +25,7 @@ client.on("ready", async () => {
   });
 });
 //===============================================================================\\
-client.on("message", message => {
-  if (message.content === "Binvite") {
-    const embed = new Discord.MessageEmbed()
-      .setThumbnail(client.user.avatarURL())
-      .setColor("36d8ff")
-      .setAuthor("Prefix BOXBOT { B }").setDescription(`
-[Invite](https://discord.com/api/oauth2/authorize?client_id=765221994886725652&permissions=8&scope=bot)`)
+
 //===============================================================================\\
 client.on("message", emprator => {
   if (emprator.content === "Bsupport") {
