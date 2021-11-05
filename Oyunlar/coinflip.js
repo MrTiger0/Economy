@@ -46,11 +46,11 @@ if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
      if (awnser === "LOOSELOOSE") {
  var kaybettin = miktar*1       
         //////        
-        var text2 = `**<@${message.author.id}> CoinFlip <a:emoji_52:878634024271224872> Choice win Or Lost**`;
+        var text2 = `**<@${message.author.id}> CoinFlip <:emoji_75:905991272370696202> Choice win Or Lost**`;
           message.channel.send(text2).then(msg => {
             setTimeout(() => {
-              msg.edit(`<@${message.author.id}>spent ${-kaybettin} <:emoji_79:905868902746169375> and chose heads
-The coin spins... 💰 tail and you lost it all...<:emoji_79:905868902746169375> (loose)`);
+              msg.edit(`<@${message.author.id}>spent ${-kaybettin}  and chose heads
+The coin spins... 💰 tail and you lost it all...<:emoji_75:905991272370696202> (loose)`);
             }, 3000);
           });
       await db.set(`bahisoynama_${message.author.id}`, Date.now());   
@@ -62,7 +62,7 @@ The coin spins... 💰 tail and you lost it all...<:emoji_79:905868902746169375>
           message.channel.send(text2).then(msg => {
             setTimeout(() => {
               msg.edit(`<@${message.author.id}> spent ${kazandın} <:emoji_79:905868902746169375> and chose heads
-The coin spins... 💰 coinflip <:emoji_79:905868902746169375> (win)`);
+The coin spins... 💰 coinflip <:emoji_75:905991272370696202> (win)`);
             }, 3000);
           });
     await db.set(`bahisoynama_${message.author.id}`, Date.now());   
