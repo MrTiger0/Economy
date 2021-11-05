@@ -25,27 +25,13 @@ client.on("ready", async () => {
   });
 });
 //===============================================================================\\
-if(message.content.startsWith(`${prefix}invite`)){
-    //define saymsg
-    const saymsg = message.content.slice(Number(prefix.length) + 5)
-    //define embed
+client.on("message", message => {
+  if (message.content === "Binvite") {
     const embed = new Discord.MessageEmbed()
-    .setColor("#FF0000")
-    .setImage(``)
-    .setDescription (`
-    Links`BOX BOT Best Bot Game`
-Bot
-[Invite](https://discord.com/api/oauth2/authorize?client_id=765221994886725652&permissions=8&scope=bot)`)
-    .setFooter(message.author.username, message.author.displayAvatarURL)
-    .setImage(``)
-    .setTitle(`**Invite BOX BOT**`) 
-    .setThumbnail(``)
-    .setTimestamp()
-    
-    //send the Message
-    message.channel.send(embed)
-   message.react("✔️")
-  } 
+      .setColor("36d8ff")
+      .setField(`
+[invite](https://discord.com/api/oauth2/authorize?client_id=765221994886725652&permissions=8&scope=bot)
+`)
 //===============================================================================\\
 client.on("message", emprator => {
   if (emprator.content === "Bsupport") {
