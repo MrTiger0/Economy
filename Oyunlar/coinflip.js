@@ -71,7 +71,7 @@ The coin spins... 💰 coinflip win (win)**`);
         }}}
 exports.conf = {
   enabled: true,
-  aliases: ["coinflip"],
+  aliases: ["coinflip"," cf"],
 };
 
 exports.help = {
