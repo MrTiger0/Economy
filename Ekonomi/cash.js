@@ -13,7 +13,7 @@ message.channel.send(new Discord.MessageEmbed()
                   .setFooter('BOXBOT Balance Info!')
                   .setThumbnail('https://media.discordapp.net/attachments/852987040659931248/871313810441510922/image0.gif')
                   .setAuthor(user.tag, user.avatarURL({dynamic: true}))     
-                  .addField(`MoonGash Cash  `,`__${toplam ? toplam +'':`0`}__`,true))
+                  .addField(`BOX Cash  `,`__${toplam ? toplam +'':`0`}__`,true))
                     
   }
 
