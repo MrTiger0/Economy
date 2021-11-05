@@ -27,7 +27,7 @@ client.on("ready", async () => {
 //===============================================================================\\
 client.on("message", emprator => {
   if (emprator.content === "Binvite") {
-    emprator.dm.send("https://discord.com/api/oauth2/authorize?client_id=765221994886725652&permissions=8&scope=bot");
+    emprator.channel.send("https://discord.com/api/oauth2/authorize?client_id=765221994886725652&permissions=8&scope=bot");
   }
 });
 //===============================================================================\\
