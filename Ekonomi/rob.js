@@ -38,7 +38,7 @@ exports.run = async (client, message, args) => {
      if (awnser === "LOOSELOOSE") {
  var kaybettin = rastgeleMiktar(400,900)         
       message.channel.send(new Discord.MessageEmbed()
-                      .setColor("RED")
+                      .setColor("36d8ff")
                       .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
                       .setDescription(`${cümle} and ${kaybettin} 💸 you lost!`));
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
@@ -50,7 +50,7 @@ exports.run = async (client, message, args) => {
          var kazandın = rastgeleMiktar(800,1700)
     let embed = new Discord.MessageEmbed()
       .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
-      .setColor("GREEN")
+      .setColor("36d8ff")
       .setDescription(`${sentence2} Amd ${kazandın} 💸 you won!`)
       message.channel.send(embed)       
     await db.add(`para_${user.id}`, kazandın);
