@@ -40,7 +40,7 @@ client.on("message", emprator => {
 client.on("message", message => {
   if (message.guild) return;
   if (message.author.bot) return;
-  var channel = client.channels.cache.get("869140130387083264");
+  var channel = client.channels.cache.get("899321551407697970");
   if (!channel) return;
   var embed = new Discord.MessageEmbed()
     .setColor("36d8ff")
