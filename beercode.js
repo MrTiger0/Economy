@@ -3,6 +3,7 @@ const fs = require("fs");
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
 const http = require("http");
 const db = require("quick.db");
+const mongoose = require("mongoose")
 const moment = require("moment");
 const express = require("express");
 const ayarlar = require("./ayarlar.json");
